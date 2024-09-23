@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # Run inside DSHS_IP_RDF/code/
+# Code filters ICD-10 codes from the input file based on the ICD-10 codes in the CSV file
+# 
+
 
 # Check for arguments
 if [ $# -ne 2 ]; then
@@ -35,7 +38,7 @@ col_indices=$(echo "$header" | awk -F'\t' '{
 
 # Ensure we found columns
 if [ -z "$col_indices" ]; then
-    echo "No diagnostic code columns found in input file!"
+    echo "No diagnostic code columns found in input file >_<"
     exit 1
 fi
 
