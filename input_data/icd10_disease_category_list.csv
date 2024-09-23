@@ -1,0 +1,16 @@
+ICD10_CODE,DESCRIP,DISEASE_CAT
+J1282,Pneumonia due to coronavirus disease 2019,COV
+U071,COVID-19,COV
+J09,Influenza due to certain identified influenza viruses,FLU
+J10,Influenza due to other identified influenza viruses,FLU
+J11,Influenza due to unidentified influenza virus,FLU
+B974,Respiratory syncytial virus (RSV) as the cause of diseases classified elsewhere,RSV
+J121,Respiratory syncytial virus pneumonia,RSV
+J205,Acute bronchitis due to respiratory syncytial virus,RSV
+J210,Acute bronchiolitis due to respiratory syncytial virus,RSV
+J00,acute nasopharyngitis; common cold,ILI
+J122,Parainfluenza virus pneumonia,ILI
+J123,Human metapneumovirus pneumonia,ILI
+J1281,Pneumonia due to SARS-associated coronavirus,ILI
+J1289,Other viral pneumonia,ILI
+J129,"Viral pneumonia, unspecified",ILI
