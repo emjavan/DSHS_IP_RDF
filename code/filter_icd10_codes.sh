@@ -6,14 +6,17 @@
 
 
 # Check for arguments
-if [ $# -ne 2 ]; then
-   echo "Usage: $0 <input_txt_file> <icd10_csv_file>"
+if [ $# -ne 3 ]; then
+   echo "Usage: $0 <input_txt_file> <icd10_csv_file> <output_txt_file>"
    exit 1
 fi
 
 input_file="$1"
 icd10_file="$2"
-output_file="${input_file%.txt}_filtered.txt"
+
+# make output file a passed value so I can specify the path to write files to
+#output_file="${input_file%.txt}_filtered.txt"
+output_file="$3"
 
 # Get the total number of rows before filtering (excluding header)
 echo -e "\n\n"

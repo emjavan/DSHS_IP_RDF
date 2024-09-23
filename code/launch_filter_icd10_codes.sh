@@ -19,5 +19,6 @@ date
 
 # Launch serial code
 time bash filter_icd10_codes.sh \
-../../data_subsets_for_testing/head50lines_out.IP_2018_Q3_4.txt \
-../input_data/icd10_disease_category_list.csv
+../../ALL_OG_FILES/OG_PATIENT_FILES/out.IP_2018_Q3_4.txt \
+../input_data/icd10_disease_category_list.csv \
+../../FILTERED_PAT_FILES/out.IP_2018_Q3_4_filtered.txt
