@@ -13,6 +13,7 @@ icd10_file="$2"
 output_file="${input_file%.txt}_filtered.txt"
 
 # Get the total number of rows before filtering (excluding header)
+echo -e "\n\n"
 filtered_rows_prev=$(awk 'END{print NR-1}' "$input_file")
 echo "Total rows before filtering: $filtered_rows_prev"
 
@@ -61,3 +62,4 @@ filtered_rows=$(awk 'END{print NR-1}' "$output_file")
 echo "Total rows after filtering: $filtered_rows"
 
 echo "Filtered data written to $output_file"
+echo -e "\n\n"
