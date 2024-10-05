@@ -20,8 +20,7 @@ time bash filter_icd10_codes.sh \
 
 # Total rows before filtering: 1555126
 # Total rows after filtering: 8991
-# Took 5.835s 
-
+# Took 5.835s
 time bash filter_icd10_codes.sh \
 ../../ALL_OG_FILES/OG_PATIENT_FILES/out.IP_2018_Q3_4.txt \
 ../input_data/icd10_disease_category_list.csv \

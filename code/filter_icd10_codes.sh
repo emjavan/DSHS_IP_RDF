@@ -2,8 +2,7 @@
 
 # Run inside DSHS_IP_RDF/code/
 # Code filters ICD-10 codes from the input file based on the ICD-10 codes in the CSV file
-# 
-
+# Will take any codes that start with the character string in CSV file
 
 # Check for arguments
 if [ $# -ne 3 ]; then

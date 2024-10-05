@@ -17,33 +17,44 @@
 pwd
 date
 
-# Leaving as serial task because 500GB of data won't fit in RAM
+# Leaving as serial task because take 11sec each
 # Launch serial code
 
 # Total rows before filtering: 1555126
 # Total rows after filtering: 8991
 # Took 5.835s
-#time bash filter_icd10_codes.sh \
-#../../ALL_OG_FILES/OG_PATIENT_FILES/out.IP_2018_Q3_4.txt \
-#../input_data/icd10_disease_category_list.csv \
-#../../FILTERED_PAT_FILES/out.IP_2018_Q3_4_filtered.txt
+time bash filter_icd10_codes.sh \
+../../ALL_OG_FILES/OG_PATIENT_FILES/out.IP_2018_Q3_4.txt \
+../input_data/icd10_disease_category_list.csv \
+../../FILTERED_PAT_FILES/out.IP_2018_Q3_4_filtered.txt
 
-
+# Total rows before filtering: 3141275
+# Total rows after filtering: 33368
+# Took 11.629s
 time bash filter_icd10_codes.sh \
 ../../ALL_OG_FILES/OG_PATIENT_FILES/out.IP_2019.txt \
 ../input_data/icd10_disease_category_list.csv \
 ../../FILTERED_PAT_FILES/out.IP_2019_filtered.txt
 
+# Total rows before filtering: 2945904
+# Total rows after filtering: 196218
+# Took 11.446s
 time bash filter_icd10_codes.sh \
 ../../ALL_OG_FILES/OG_PATIENT_FILES/out.IP_2020.txt \
 ../input_data/icd10_disease_category_list.csv \
 ../../FILTERED_PAT_FILES/out.IP_2020_filtered.txt
 
+# Total rows before filtering: 3051719
+# Total rows after filtering: 268126
+# Took 11.899s
 time bash filter_icd10_codes.sh \
 ../../ALL_OG_FILES/OG_PATIENT_FILES/out.IP_2021.txt \
 ../input_data/icd10_disease_category_list.csv \
 ../../FILTERED_PAT_FILES/out.IP_2021_filtered.txt
 
+# Total rows before filtering: 3090509
+# Total rows after filtering: 185730
+# Took 11.521s
 time bash filter_icd10_codes.sh \
 ../../ALL_OG_FILES/OG_PATIENT_FILES/out.IP_2022.txt \
 ../input_data/icd10_disease_category_list.csv \
