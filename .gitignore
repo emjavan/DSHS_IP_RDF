@@ -1,5 +1,8 @@
 .DS_Store
 
+# docker/sigularity container too big for github
+code/r_tidycensus_jags_geo.sif
+
 # History files
 .Rhistory
 .Rapp.history
