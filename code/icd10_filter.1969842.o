@@ -1,0 +1,38 @@
+/corral-secure/utexas/IBN24016/DSHS_IP_RDF/code
+Mon Sep 23 19:58:25 CDT 2024
+
+
+
+Total rows before filtering: 3141275
+Total rows after filtering: 33368
+Filtered data written to ../../FILTERED_PAT_FILES/out.IP_2019_filtered.txt
+
+
+
+
+
+
+Total rows before filtering: 2945904
+Total rows after filtering: 196218
+Filtered data written to ../../FILTERED_PAT_FILES/out.IP_2020_filtered.txt
+
+
+
+
+
+
+Total rows before filtering: 3051719
+Total rows after filtering: 268126
+Filtered data written to ../../FILTERED_PAT_FILES/out.IP_2021_filtered.txt
+
+
+
+
+
+
+Total rows before filtering: 3090509
+Total rows after filtering: 185730
+Filtered data written to ../../FILTERED_PAT_FILES/out.IP_2022_filtered.txt
+
+
+
