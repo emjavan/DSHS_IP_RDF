@@ -122,7 +122,7 @@ process_patient_data <- function(df, icd10_df) {
       # Calculate length of stay
       ADMIT_START_OF_CARE = lubridate::ymd(ADMIT_START_OF_CARE),
       STMT_PERIOD_THRU    = lubridate::ymd(STMT_PERIOD_THRU),
-      LENGTH_OF_STAY_DAYS = time_length(STMT_PERIOD_THRU - ADMIT_START_OF_CARE, unit = "days"),
+      LENGTH_OF_STAY_DAYS = lubridate::time_length(STMT_PERIOD_THRU - ADMIT_START_OF_CARE, unit = "days"),
       
       # Binary flags for ward and ICU amounts being 0
       WARD_AMOUNT_0USD = ifelse(WARD_AMOUNT == 0, 1, 0),
