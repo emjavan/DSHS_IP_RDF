@@ -6,7 +6,8 @@
 # Working directory is DSHS_IP_RDF/code/
 
 #### Load the custom function from city_lvl_functions.R ####
-source("get_packages_used.R")
+#source("get_packages_used.R")
+library(tidyverse)
 source("sum_stats_functions.R")
 
 # disable verbose/debug print statements

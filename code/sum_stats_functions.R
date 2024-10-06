@@ -66,7 +66,7 @@ assign_disease_category <- function(diag_code, poa_code, icd10_df) {
     # Return the disease category if a match is found
     if (nrow(match_row) > 0) {
       # print the matched row if debugging
-      ic(c(match_row$ICD10_CODE[1], match_row$DISEASE_CAT[1]))
+      #ic(c(match_row$ICD10_CODE[1], match_row$DISEASE_CAT[1]))
       return(match_row$DISEASE_CAT[1])  # Return the first matching disease category
     } else {
       return(NA_character_)  # Return NA if no match is found
