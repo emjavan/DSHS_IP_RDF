@@ -14,6 +14,7 @@ if (!require("pacman"))
 
 # Load libraries
 pacman::p_load(tidyverse,
-               icecream
+               icecream,
+               testthat
                )
 

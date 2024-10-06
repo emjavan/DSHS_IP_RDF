@@ -5,6 +5,13 @@
 
 # Working directory is DSHS_IP_RDF/code/
 
+# To Do
+# Add testthat error checking
+# finish documentation of the columns in the files
+# update readme in parent dir and code
+# share path with Dongah and Jose to look at the files
+
+
 #### Load the custom function from city_lvl_functions.R ####
 source("get_packages_used.R")
 source("sum_stats_functions.R")
@@ -23,6 +30,17 @@ patient_data       = read_delim(pat_data_path, delim = "\t", col_types = cols(.d
          across(c(PAT_AGE_DAYS, WARD_AMOUNT, ICU_AMOUNT), as.numeric)
          )
 output_path_prefix = gsub("_filtered.txt", "", pat_data_path)
+data_date = get_data_date(pat_data_path) # get data date and ensure sep="-"
+fig_dir="../figures/"
+if(!dir.exists(fig_dir)){
+  dir.create(fig_dir)
+} # end if fig dir not made
+if(!(data_date=="")){
+  append_data_date_string = paste0("_", data_date) # date for figs
+}else{
+  append_data_date_string = ""
+} # end if data_date is from real file for some local test data
+
 
 #### Read in data ####
 # ICD-10 code disease categorization
@@ -59,16 +77,32 @@ if(!file.exists(admit_zip_path)){
   admit_per_zip = read_csv(admit_zip_path)
 } # end if admits grouped to disease/ZIP/age grp/day
 
+#/////////////////////
+#### SUMMARY FIGS ####
+#/////////////////////
+los_wardcost_plt = 
+  ggplot(patient_data_icd10_cat %>%
+           drop_na(PRIMARY_ADMIT_POA_Y),
+         aes(x=LENGTH_OF_STAY_DAYS, y=WARD_AMOUNT, group=PRIMARY_ADMIT_POA_Y, color=PRIMARY_ADMIT_POA_Y))+
+  geom_smooth(method = "lm", formula = "y~x")+
+  geom_point()+
+  labs(x="Patient Length of Stay", y="Ward Amount",
+       color=paste0("Disease\n", data_date) )+
+  theme_bw()
+ggsave(paste0(fig_dir, "los_wardcost_regression", append_data_date_string, ".png"), 
+       los_wardcost_plt, width = 5, height = 6, dpi=1200)
 
-
-  
-# Test out running on frontera
-#  downloading icecream package, module load Rstats
-#  get parallel script going to do each year file from command line
-# write csv appropriately with year
-# will need to do some error checking
-# finish documentation of the columns in the files
-# share path with Dongah and Jose to look at the files
+los_icucost_plt = 
+  ggplot(patient_data_icd10_cat %>%
+           drop_na(PRIMARY_ADMIT_POA_Y),
+         aes(x=LENGTH_OF_STAY_DAYS, y=ICU_AMOUNT, group=PRIMARY_ADMIT_POA_Y, color=PRIMARY_ADMIT_POA_Y))+
+  geom_smooth(method = "lm", formula = "y~x")+
+  geom_point()+
+  labs(x="Patient Length of Stay", y="ICU Amount",
+       color=paste0("Disease\n", data_date) )+
+  theme_bw()
+ggsave(paste0(fig_dir, "los_icucost_regression", append_data_date_string, ".png"), 
+       los_icucost_plt, width = 5, height = 6, dpi=1200)
 
 
 

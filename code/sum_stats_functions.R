@@ -96,7 +96,6 @@ assign_disease_category <- function(diag_code, poa_code, icd10_df) {
 #' @examples
 #' processed_data <- process_patient_data(patient_data, icd10_df)
 process_patient_data <- function(df, icd10_df) {
-  
   cleaned_pat_df =
     df %>%
     rowwise() %>%
@@ -108,10 +107,15 @@ process_patient_data <- function(df, icd10_df) {
       SECONDARY_ADMIT_POA_Y_3 = assign_disease_category(OTH_DIAG_CODE_3, POA_OTH_DIAG_CODE_3, icd10_df),
       
       # Binary flags if any of the disease categories (COV, FLU, RSV, ILI) appear in secondary diagnoses
-      SECONDARY_COV = as.integer(sum(across(starts_with("SECONDARY_ADMIT_POA_Y"), ~ . == "COV"), na.rm = TRUE) > 0),
-      SECONDARY_FLU = as.integer(sum(across(starts_with("SECONDARY_ADMIT_POA_Y"), ~ . == "FLU"), na.rm = TRUE) > 0),
-      SECONDARY_RSV = as.integer(sum(across(starts_with("SECONDARY_ADMIT_POA_Y"), ~ . == "RSV"), na.rm = TRUE) > 0),
-      SECONDARY_ILI = as.integer(sum(across(starts_with("SECONDARY_ADMIT_POA_Y"), ~ . == "ILI"), na.rm = TRUE) > 0)
+      # Convert NA values to FALSE before summing
+      SECONDARY_COV = as.integer(sum(across(starts_with("SECONDARY_ADMIT_POA_Y"), 
+                                            ~ replace_na(. == "COV", FALSE)) > 0)),
+      SECONDARY_FLU = as.integer(sum(across(starts_with("SECONDARY_ADMIT_POA_Y"), 
+                                            ~ replace_na(. == "FLU", FALSE)) > 0)),
+      SECONDARY_RSV = as.integer(sum(across(starts_with("SECONDARY_ADMIT_POA_Y"), 
+                                            ~ replace_na(. == "RSV", FALSE)) > 0)),
+      SECONDARY_ILI = as.integer(sum(across(starts_with("SECONDARY_ADMIT_POA_Y"), 
+                                            ~ replace_na(. == "ILI", FALSE)) > 0))
     ) %>%
     ungroup() %>%
     mutate(
@@ -189,6 +193,43 @@ summarize_admissions_by_zip <- function(df, zip_to_city) {
   
   return(admit_per_zip)
 } # end summarize_admissions_by_zip
+
+#' Extract data date from file path
+#'
+#' This function extracts the date from file paths that match the pattern for `out.IP_*_filtered.txt` files.
+#' It handles file names with both year and quarter (e.g., `out.IP_2018_Q3_4_filtered.txt`) or just year (e.g., `out.IP_2022_filtered.txt`).
+#' If the file path is for a synthetic data file (`IP_RDF_synthetic_data_filtered.txt`), it assigns `NA` to `data_date`.
+#' If the file path does not match either pattern, an error is thrown.
+#'
+#' @param file_path character: The path to the input file.
+#'
+#' @return character: The extracted date or date and quarter as a string for `out.IP_*_filtered.txt` files, or `NA` for synthetic data files.
+#'
+#' @examples
+#' get_data_date("../../FILTERED_PAT_FILES/out.IP_2018_Q3_4_filtered.txt")
+#' # Returns "2018_Q3_4"
+#' 
+#' get_data_date("../../FILTERED_PAT_FILES/out.IP_2022_filtered.txt")
+#' # Returns "2022"
+#' 
+#' get_data_date("../../synthetic_data/IP_RDF_synthetic_data_filtered.txt")
+#' # Returns empty string
+get_data_date <- function(file_path) {
+  if (grepl("out\\.IP_.*_filtered\\.txt$", file_path)) {
+    # Extract the date or date+quarter from the out.IP file name
+    data_date = gsub(".*out\\.IP_", "", file_path)
+    data_date = gsub("_filtered\\.txt$", "", data_date)
+    data_date = gsub("_", "-", data_date)
+  } else if (grepl("synthetic_data/IP_RDF_synthetic_data_filtered\\.txt$", file_path)) {
+    # For synthetic data files, set data_date to NA
+    data_date <- ""
+  } else {
+    stop("Unknown file type")
+  } # end if else
+  
+  return(data_date)
+} # end get_data_date
+
 
 
 
