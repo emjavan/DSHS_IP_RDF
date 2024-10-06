@@ -12,6 +12,15 @@ source("sum_stats_functions.R")
 # disable verbose/debug print statements
 ic_disable()
 
+#### The IP RDF patient file ####
+# Local machine parameter example to test: pat_data_path="../synthetic_data/IP_RDF_synthetic_data_filtered.txt"
+# On LS6 take in file path from command line: ../FILTERED_PAT_FILES/out.IP_*_filtered.txt
+# *_filtered.txt files created with filter_icd10_codes.sh
+args               = commandArgs(TRUE)
+pat_data_path      = as.character(args[1])
+patient_data       = read_tsv(pat_data_path)
+output_path_prefix = gsub("_filtered.txt", "", pat_data_path)
+
 #### Read in data ####
 # ICD-10 code disease categorization
 icd10_df = read_csv("../input_data/icd10_disease_category_list.csv") %>%
@@ -28,15 +37,6 @@ if(!file.exists(zip_city_path)){
 }else{
   zip_to_city_tx = read_csv(zip_city_path)
 } # end if tx only ZIP to city crosswalk file was created
-
-#### The IP RDF patient file ####
-# Local machine parameter example to test: pat_data_path="../synthetic_data/IP_RDF_synthetic_data_filtered.txt"
-# On LS6 take in file path from command line: ../FILTERED_PAT_FILES/out.IP_*_filtered.txt
-# *_filtered.txt files created with filter_icd10_codes.sh
-args               = commandArgs(TRUE)
-pat_data_path      = as.character(args[1])
-patient_data       = read_tsv(pat_data_path)
-output_path_prefix = gsub("_filtered.txt", "", pat_data_path)
 
 #### Assign Disease category ####
 categorized_data_path = paste0(output_path_prefix, "_categorized.csv")
