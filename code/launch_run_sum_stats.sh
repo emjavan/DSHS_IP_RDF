@@ -14,7 +14,8 @@
 # File run from inside DSHS_IP_RDF/code/
 
 # Load module to run sinularity container
-module load tacc-apptainer
+#module load tacc-apptainer
+module load Rstats
 
 # Load launcher for MPI task
 module load launcher
