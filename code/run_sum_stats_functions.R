@@ -6,12 +6,12 @@
 # Working directory is DSHS_IP_RDF/code/
 
 #### Load the custom function from city_lvl_functions.R ####
-#source("get_packages_used.R")
-library(tidyverse)
+source("get_packages_used.R")
+#library(tidyverse)
 source("sum_stats_functions.R")
 
 # disable verbose/debug print statements
-ic_disable()
+#ic_disable()
 
 #### The IP RDF patient file ####
 # Local machine parameter example to test: pat_data_path="../synthetic_data/IP_RDF_synthetic_data_filtered.txt"
