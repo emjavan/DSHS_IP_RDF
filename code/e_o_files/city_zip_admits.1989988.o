@@ -1,0 +1,29 @@
+/corral-secure/utexas/IBN24016/DSHS_IP_RDF/code
+Sun Oct  6 08:46:29 CDT 2024
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    2
+   Working directory:  /corral-secure/utexas/IBN24016/DSHS_IP_RDF/code
+   Processes per host: 2
+   Total processes:    4
+   Total jobs:         5
+   Scheduling method:  interleaved
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+Launcher: Task 1 running job 2 on c304-018.ls6.tacc.utexas.edu (Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2019_filtered.txt)
+Launcher: Task 0 running job 1 on c304-018.ls6.tacc.utexas.edu (Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2018_Q3_4_filtered.txt)
+Launcher: Task 2 running job 3 on c304-022.ls6.tacc.utexas.edu (Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2020_filtered.txt)
+Launcher: Task 3 running job 4 on c304-022.ls6.tacc.utexas.edu (Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2021_filtered.txt)
+Launcher: Job 2 completed in 0 seconds.
+Launcher: Job 1 completed in 0 seconds.
+Launcher: Task 1 done. Exiting.
+Launcher: Task 0 running job 5 on c304-018.ls6.tacc.utexas.edu (Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2022_filtered.txt)
+Launcher: Job 4 completed in 0 seconds.
+Launcher: Job 3 completed in 0 seconds.
+Launcher: Task 3 done. Exiting.
+Launcher: Task 2 done. Exiting.
+Launcher: Job 5 completed in 1 seconds.
+Launcher: Task 0 done. Exiting.
+Launcher: Done. Job exited without errors
