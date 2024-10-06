@@ -48,7 +48,12 @@ match_icd10 <- function(diag_code, icd10_code, code_start_with) {
 #' 
 #' @example assign_disease_category(diag_code="J1011", poa_code="Y", icd10_df)
 assign_disease_category <- function(diag_code, poa_code, icd10_df) {
-  if (poa_code == "Y") {
+  
+  if (is.na(diag_code)) {
+    return(NA_character_)  # Return NA for missing POA codes or when POA is not "Y"
+  }
+  
+  if ((!is.na(poa_code)) & (poa_code == "Y")) {
     # Add columns for icd-10 substring and matching logic, then filter for only matching string
     match_row <- icd10_df %>%
       mutate(

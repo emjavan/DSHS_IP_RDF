@@ -7,7 +7,6 @@
 
 #### Load the custom function from city_lvl_functions.R ####
 source("get_packages_used.R")
-#library(tidyverse)
 source("sum_stats_functions.R")
 
 # disable verbose/debug print statements
@@ -19,7 +18,10 @@ source("sum_stats_functions.R")
 # *_filtered.txt files created with filter_icd10_codes.sh
 args               = commandArgs(TRUE)
 pat_data_path      = as.character(args[1])
-patient_data       = read_tsv(pat_data_path)
+patient_data       = read_delim(pat_data_path, delim = "\t", col_types = cols(.default = "c")) %>%
+  mutate(across(everything(), ~ na_if(.x, "")), # convert blanks to NAs
+         across(c(PAT_AGE_DAYS, WARD_AMOUNT, ICU_AMOUNT), as.numeric)
+         )
 output_path_prefix = gsub("_filtered.txt", "", pat_data_path)
 
 #### Read in data ####
@@ -34,9 +36,9 @@ if(!file.exists(zip_city_path)){
     select(zip, city, state_id, county_fips, county_name) %>%
     rename(PAT_ZIP_5CHAR=zip, CITY=city, STABR=state_id, 
            COUNTY_FIPS = county_fips, COUNTY_NAME = county_name)
-  write.csv(zip_to_city_tx, zip_city_path)
+  write.csv(zip_to_city_tx, zip_city_path, row.names=F)
 }else{
-  zip_to_city_tx = read_csv(zip_city_path)
+  zip_to_city_tx = read_delim(zip_city_path, delim = ",", col_types = cols(.default = "c"))
 } # end if tx only ZIP to city crosswalk file was created
 
 #### Assign Disease category ####
