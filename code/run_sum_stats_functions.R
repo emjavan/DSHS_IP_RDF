@@ -84,7 +84,8 @@ if(!file.exists(categorized_data_path) | re_make_cat_files ==T){
   patient_data_icd10_cat = process_patient_data(patient_data, icd10_df)
   write.csv(patient_data_icd10_cat, categorized_data_path, row.names=F)
 }else{
-  patient_data_icd10_cat = read_csv(categorized_data_path)
+  patient_data_icd10_cat = read_csv(categorized_data_path) %>%
+    mutate(PAT_ZIP_5CHAR = as.character(PAT_ZIP_5CHAR))
 } # end if diseases have been categorized
 
 #/////////////////////////////////////////////
