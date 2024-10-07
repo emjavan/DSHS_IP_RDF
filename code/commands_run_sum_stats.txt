@@ -1,5 +1,5 @@
-Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2018_Q3_4_filtered.txt
-Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2019_filtered.txt
-Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2020_filtered.txt
-Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2021_filtered.txt
-Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2022_filtered.txt
+Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2018_Q3_4_filtered.txt F F
+Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2019_filtered.txt F F
+Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2020_filtered.txt F F
+Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2021_filtered.txt F F
+Rscript run_sum_stats_functions.R ../../FILTERED_PAT_FILES/out.IP_2022_filtered.txt F F
