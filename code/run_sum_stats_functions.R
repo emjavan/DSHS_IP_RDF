@@ -64,17 +64,17 @@ icd10_df = read_csv("../input_data/icd10_disease_category_list.csv") %>%
   dplyr::select(ICD10_CODE, CODE_STARTS_WITH, ICD10_3CHAR_SUBSTRING, DISEASE_CAT)
 
 # Crosswalk for ZIPs to cities
-zip_city_path = "../input_data/simplemaps_zip_to_city_tx.csv"
+zip_city_path = "../input_data/simplemaps_zip_to_city_clean.csv"
 if(!file.exists(zip_city_path)){
-  zip_to_city_tx = read_csv("../input_data/simplemaps_uszips_basicv185.csv") %>%
-    filter(state_id=="TX") %>%
+  zip_to_city_clean = read_csv("../input_data/simplemaps_uszips_basicv185.csv") %>%
+    #filter(state_id=="TX") %>%
     select(zip, city, state_id, county_fips, county_name) %>%
     rename(PAT_ZIP_5CHAR=zip, CITY=city, STABR=state_id, 
            COUNTY_FIPS = county_fips, COUNTY_NAME = county_name)
-  write.csv(zip_to_city_tx, zip_city_path, row.names=F)
+  write.csv(zip_to_city_clean, zip_city_path, row.names=F)
 }else{
-  zip_to_city_tx = read_delim(zip_city_path, delim = ",", col_types = cols(.default = "c"))
-} # end if tx only ZIP to city crosswalk file was created
+  zip_to_city_clean = read_delim(zip_city_path, delim = ",", col_types = cols(.default = "c"))
+} # end if clean ZIP to city crosswalk file was created
 
 #////////////////////////////////
 #### Assign Disease category ####
@@ -93,7 +93,7 @@ if(!file.exists(categorized_data_path) | re_make_cat_files ==T){
 #/////////////////////////////////////////////
 admit_zip_path = paste0(output_path_prefix, "_hosp_admit_timeseries.csv")
 if(!file.exists(admit_zip_path) | re_make_admit_files==T ){
-  admit_per_zip = summarize_admissions_by_zip(patient_data_icd10_cat, zip_to_city_tx)
+  admit_per_zip = summarize_admissions_by_zip(patient_data_icd10_cat, zip_to_city_clean)
   write.csv(admit_per_zip, admit_zip_path, row.names=F)
 }else{
   admit_per_zip = read_csv(admit_zip_path)
