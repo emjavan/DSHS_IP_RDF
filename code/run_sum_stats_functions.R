@@ -102,14 +102,14 @@ if(!file.exists(admit_zip_path) | re_make_admit_files==T ){
 #/////////////////////
 #### SUMMARY FIGS ####
 #/////////////////////
-create_los_cost_plot(patient_data_icd10_cat, 
+create_los_cost_plot(patient_data = patient_data_icd10_cat, 
                      y_var = "WARD_AMOUNT", 
                      file_name = "los_wardcost_regression", 
-                     width = 6, 
-                     height = 5, 
-                     fig_dir = fig_dir, 
-                     data_date = data_date, 
-                     append_data_date_string = append_data_date_string)
+                     width = 9, 
+                     height = 11, 
+                     fig_dir,
+                     data_date, 
+                     append_data_date_string)
 
 # Example usage for ICU cost plot
 create_los_cost_plot(patient_data_icd10_cat, 

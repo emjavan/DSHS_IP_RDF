@@ -41,6 +41,7 @@ create_los_cost_plot <- function(patient_data,
     labs(x = "Patient Length of Stay", 
          y = ifelse(y_var == "WARD_AMOUNT", "Ward Amount ($)", "ICU Amount ($)"),
          color = paste0("Disease\n", data_date)) +
+    facet_wrap(~PRIMARY_ADMIT_POA_Y, ncol = 1) +
     theme_bw()
   
   # Save the plot
