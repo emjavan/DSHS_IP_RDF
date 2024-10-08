@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#SBATCH -J city_zip_admits              # Job name
-#SBATCH -o city_zip_admits.%j.o         # Name of stdout output file
-#SBATCH -e city_zip_admits.%j.e         # Name of stderr error file
+#SBATCH -J los_cost_plots               # Job name
+#SBATCH -o los_cost_plots.%j.o          # Name of stdout output file
+#SBATCH -e los_cost_plots.%j.e          # Name of stderr error file
 #SBATCH -p corralextra                  # Queue (partition) name
 #SBATCH -N 2                            # Total nodes (must be 1 for serial)
 #SBATCH -n 5                            # Total mpi tasks (should be 1 for serial)
-#SBATCH -t 02:00:00                     # Run time (hh:mm:ss)
+#SBATCH -t 00:30:00                     # Run time (hh:mm:ss)
 #SBATCH --mail-type=all                 # Send email at begin, end, fail of job
 #SBATCH -A IBN24016                     # Project/Allocation name (req'd if you have more than 1)
 #SBATCH --mail-user=emjavan@utexas.edu  # Email to send to
