@@ -83,7 +83,7 @@ count_diseases_in_files <- function(dir_path = NULL, file_path = NULL) {
     # This is for the real data on cluster that is year dependent
   } else if (!is.null(dir_path)) {
     # All files in directory
-    file_list_vect = list.files(dir_path, pattern="out.IP_*_categorized.csv")
+    file_list_vect = list.files(dir_path, pattern="*_categorized.csv")
     
     ic(file_list_vect)
 
@@ -91,7 +91,7 @@ count_diseases_in_files <- function(dir_path = NULL, file_path = NULL) {
     results <- data.frame()
     year_vect = rep(NA, length(file_list_vect))
     # Loop over files in dir
-    for (year_index in length(file_list_vect)) {
+    for (year_index in 1:length(file_list_vect)) {
       # Get year of file in list vector
       single_year = gsub(pattern="out.IP_", "", file_list_vect[year_index])
       single_year = gsub(pattern="_categorized.csv", "", single_year)
@@ -205,13 +205,16 @@ if(data_to_run=="synthetic"){
   if(!file.exists(output_file_path)){
     disease_counts = count_diseases_in_files(dir_path = "../../FILTERED_PAT_FILES/")
   }else{
-    disease_counts = read_csv(file_path)
+    disease_counts = read_csv(output_file_path)
   } # end if need to clean data again
   
   # Years in final file
   first_year = min(disease_counts$YEAR)
-  last_yeat  = max(disease_counts$YEAR)
+  last_year  = max(disease_counts$YEAR)
   
+  ic(first_year)
+  ic(last_year)
+
   # Plot the count data by disease and year
   count_per_col_plot = 
     ggplot(disease_counts %>%
