@@ -6,6 +6,7 @@
 
 #### Load libraries ####
 library(tidyverse)
+library(icecream)
 
 #### Data processing function ####
 #' Count Diseases from Categorized Hospital Admission Files
@@ -84,15 +85,19 @@ count_diseases_in_files <- function(dir_path = NULL, file_path = NULL) {
     # All files in directory
     file_list_vect = list.files(dir_path, pattern="out.IP_*_categorized.csv")
     
+    ic(file_list_vect)
+
     # Initialize an empty data frame to store the results
     results <- data.frame()
     year_vect = rep(NA, length(file_list_vect))
     # Loop over files in dir
-    for (year_index in length(file_list)) {
+    for (year_index in length(file_list_vect)) {
       # Get year of file in list vector
       single_year = gsub(pattern="out.IP_", "", file_list_vect[year_index])
       single_year = gsub(pattern="_categorized.csv", "", single_year)
       
+      ic(single_year)
+
       # Path to file in input dir_path and open it
       file_path <- file.path(dir_path, file_list_vect[year_index])
       data <- read_csv(file_path, show_col_types = FALSE)
@@ -127,6 +132,7 @@ count_diseases_in_files <- function(dir_path = NULL, file_path = NULL) {
       
       results <- bind_rows(results, counts)
       year_vect[year_index] = single_year
+      ic(year_vect)
     } # end loop over years
     
     # Write results to file
