@@ -31,8 +31,7 @@ library(tidyverse)
 #'   print(disease_counts)
 #' }
 count_diseases_in_files <- function(dir_path = NULL, file_path = NULL) {
-  # Define the years to process and expected output combinations
-  year_vect = c(2018:2022)
+  # Expected row output combinations
   admit_type = c("PRIMARY_ADMIT_POA_Y", "SECONDARY_ADMIT_POA_Y_1", "SECONDARY_ADMIT_POA_Y_2", "SECONDARY_ADMIT_POA_Y_3")
   disease = c("COV", "FLU", "ILI", "RSV", "NOT_RESP")
   
@@ -82,53 +81,56 @@ count_diseases_in_files <- function(dir_path = NULL, file_path = NULL) {
     # If a directory path is provided, process each year file
     # This is for the real data on cluster that is year dependent
   } else if (!is.null(dir_path)) {
+    # All files in directory
+    file_list_vect = list.files(dir_path, pattern="out.IP_*_categorized.csv")
     
     # Initialize an empty data frame to store the results
     results <- data.frame()
-    
-    for (year_index in year_vect) {
-      single_year = year_vect[year_index]
-      file_path <- file.path(dir_path, paste0("out.IP_", single_year, "_categorized.csv"))
+    year_vect = rep(NA, length(file_list_vect))
+    # Loop over files in dir
+    for (year_index in length(file_list)) {
+      # Get year of file in list vector
+      single_year = gsub(pattern="out.IP_", "", file_list_vect[year_index])
+      single_year = gsub(pattern="_categorized.csv", "", single_year)
       
-      if (file.exists(file_path)) {
-        data <- read_csv(file_path, show_col_types = FALSE)
+      # Path to file in input dir_path and open it
+      file_path <- file.path(dir_path, file_list_vect[year_index])
+      data <- read_csv(file_path, show_col_types = FALSE)
+      
+      # Count occurrences of each disease in the specified columns
+      counts <- data %>%
+        # Organize data into columns we can group by
+        select(PRIMARY_ADMIT_POA_Y, SECONDARY_ADMIT_POA_Y_1, SECONDARY_ADMIT_POA_Y_2, SECONDARY_ADMIT_POA_Y_3) %>%
+        pivot_longer(everything(), names_to = "admit_type", values_to = "disease") %>%
+        mutate(disease = ifelse(is.na(disease), "NOT_RESP", disease)) %>%
+        group_by(admit_type, disease) %>%
+        summarize(admit_poa_y_count = n()) %>%
+        ungroup() %>%
         
-        # Count occurrences of each disease in the specified columns
-        counts <- data %>%
-          # Organize data into columns we can group by
-          select(PRIMARY_ADMIT_POA_Y, SECONDARY_ADMIT_POA_Y_1, SECONDARY_ADMIT_POA_Y_2, SECONDARY_ADMIT_POA_Y_3) %>%
-          pivot_longer(everything(), names_to = "admit_type", values_to = "disease") %>%
-          mutate(disease = ifelse(is.na(disease), "NOT_RESP", disease)) %>%
-          group_by(admit_type, disease) %>%
-          summarize(admit_poa_y_count = n()) %>%
-          ungroup() %>%
-          
-          # Add any missing combination and make it 0 count
-          full_join(expected_rows, by=c("admit_type", "disease")) %>% # add any missing combination and make it 0 count
-          mutate(icd10_col_num = gsub("SECONDARY_ADMIT_POA_Y_", "", admit_type),
-                 icd10_col_num = ifelse(admit_type=="PRIMARY_ADMIT_POA_Y", "0", icd10_col_num)) %>%
-          replace_na(list(admit_poa_y_count=0)) %>%
-          
-          # Normalize the counts to percentages to make another plot
-          group_by(disease) %>%
-          mutate(total_records_per_disease = sum(admit_poa_y_count)) %>%
-          ungroup() %>%
-          mutate(percent_record_per_column = admit_poa_y_count/total_records_per_disease*100) %>%
-          
-          # Clean-up column names and organization for writing to file
-          rename_with(toupper) %>% # make all the column names upper case
-          mutate(YEAR = single_year) %>%
-          dplyr::select(YEAR, ICD10_COL_NUM, everything()) %>%
-          arrange(YEAR, ICD10_COL_NUM, DISEASE)
+        # Add any missing combination and make it 0 count
+        full_join(expected_rows, by=c("admit_type", "disease")) %>% # add any missing combination and make it 0 count
+        mutate(icd10_col_num = gsub("SECONDARY_ADMIT_POA_Y_", "", admit_type),
+               icd10_col_num = ifelse(admit_type=="PRIMARY_ADMIT_POA_Y", "0", icd10_col_num)) %>%
+        replace_na(list(admit_poa_y_count=0)) %>%
         
-        results <- bind_rows(results, counts)
-      } else {
-        message("File not found for year: ", single_year)
-      } # end if year not found
+        # Normalize the counts to percentages to make another plot
+        group_by(disease) %>%
+        mutate(total_records_per_disease = sum(admit_poa_y_count)) %>%
+        ungroup() %>%
+        mutate(percent_record_per_column = admit_poa_y_count/total_records_per_disease*100) %>%
+        
+        # Clean-up column names and organization for writing to file
+        rename_with(toupper) %>% # make all the column names upper case
+        mutate(YEAR = single_year) %>%
+        dplyr::select(YEAR, ICD10_COL_NUM, everything()) %>%
+        arrange(YEAR, ICD10_COL_NUM, DISEASE)
+      
+      results <- bind_rows(results, counts)
+      year_vect[year_index] = single_year
     } # end loop over years
     
     # Write results to file
-    first_year = year_vect[1]
+    first_year = gsub("_", "", year_vect[1])  # change to 2018Q34
     last_year  = year_vect[length(year_vect)]
     write.csv(
       results, 
