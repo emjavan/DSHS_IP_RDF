@@ -1,0 +1,735 @@
+﻿THCIC_ID,Hospital_name,Hospital_city,COUNTY,q1,q2,q3,q4,end of quarter
+091001,Abilene Regional Medical Center,Abilene,441,1597,1605,1591,1583,end of list
+500000,Hendrick Medical Center,Abilene,441,4806,4818,4816,4945,end of list
+920000,Encompass Health Rehab Hospital Abilene,Abilene,441,280,317,293,300,end of list
+973240,Oceans Behavioral Hospital Abilene,Abilene,441,533,548,554,530,end of list
+973590,ContinueCare Hospital at Hendrick Medical Center,Abilene,441,59,54,60,64,end of list
+750000,Methodist Hospital for Surgery,Addison,113,532,622,588,687,end of list
+689401,CHRISTUS Spohn Hospital Alice,Alice,249,613,519,523,503,end of list
+724200,Texas Health Presbyterian Hospital Allen,Allen,085,641,646,638,814,end of list
+973130,PAM Specialty Hospital of Allen,Allen,085,269,271,253,287,end of list
+711900,Big Bend Regional Medical Center,Alpine,043,235,210,187,227,end of list
+001000,Baptist St Anthonys Hospital,Amarillo,375,4938,4998,4946,6191,end of list
+318000,Northwest Texas Hospital,Amarillo,375,5049,5069,5279,5167,end of list
+714000,Northwest Texas Surgery Center,Amarillo,381,12,23,18,27,end of list
+852900,Physicians Surgical Hospital-Quail Creek,Amarillo,375,262,273,308,355,end of list
+852901,Physicians Surgical Hospital-Panhandle Campus,Amarillo,375,216,227,231,277,end of list
+973340,Vibra Hospital of Amarillo,Amarillo,375,169,179,144,115,end of list
+973350,Vibra Rehabilitation Hospital Amarillo,Amarillo,375,150,168,165,143,end of list
+442000,Bayside Community Hospital,Anahuac,071,26,20,17,29,end of list
+187000,Permian Regional Medical Center,Andrews,003,314,251,280,241,end of list
+126000,UTMB Angleton Danbury Medical Center,Angleton,039,536,496,548,515,end of list
+016000,Anson General Hospital,Anson,253,84,70,70,66,end of list
+975322,Wise Health Surgical Hospital,Argyle,121,30,34,31,38,end of list
+422000,Texas Health Arlington Memorial Hospital,Arlington,439,3052,2945,3126,3147,end of list
+502000,Medical City Arlington,Arlington,439,5614,5439,5791,6314,end of list
+660000,Encompass Health Rehab Hospital Arlington,Arlington,439,423,473,441,426,end of list
+690000,Kindred Hospital-Tarrant County,Arlington,439,71,81,73,77,end of list
+730001,Texas Health Heart & Vascular Hospital,Arlington,439,167,289,207,236,end of list
+765001,Millwood Hospital,Arlington,439,1087,1173,1128,1080,end of list
+799001,USMD Hospital-Arlington,Arlington,439,286,246,226,247,end of list
+936000,Baylor Scott & White Orthopedic and Spine,Arlington,439,391,429,413,449,end of list
+974730,Texas Rehab Hospital of Arlington,Arlington,439,243,249,244,238,end of list
+975388,Perimeter Behavioral Hospital of Arlington,Arlington,439,,,62,160,end of list
+666000,Stonewall Memorial Hospital,Aspermont,433,56,27,26,43,end of list
+975293,UT Health East Texas Athens Hospital,Athens,213,1495,1492,1510,1448,end of list
+788003,Christus St Michael Hospital Atlanta,Atlanta,067,125,142,122,157,end of list
+873200,Baylor Emergency Medical Center at Aubrey,Aubrey,121,28,35,38,29,end of list
+000100,Austin State Hospital,Austin,453,156,146,143,165,end of list
+035000,St Davids Hospital,Austin,453,5120,5245,5340,5340,end of list
+497000,Ascension Seton Medical Center,Austin,453,5804,5687,5753,5943,end of list
+602000,St Davids South Austin Hospital,Austin,453,5305,5610,5971,5955,end of list
+622001,Texas NeuroRehab Center,Austin,453,144,153,142,152,end of list
+649000,St Davids Rehab Center,Austin,453,356,350,326,362,end of list
+700000,Cornerstone Specialty Hospitals Austin,Austin,453,67,66,63,70,end of list
+739001,Texas NeuroRehab Center,Austin,453,166,186,193,62,end of list
+770000,Ascension Seton Shoal Creek,Austin,453,569,564,515,541,end of list
+794000,Northwest Hills Surgical Hospital,Austin,453,130,128,130,118,end of list
+797500,Ascension Seton Southwest,Austin,209,59,85,99,105,end of list
+797600,Ascension Seton Northwest,Austin,453,1711,1643,1538,1579,end of list
+822800,Westlake Medical Center,Austin,453,203,186,204,201,end of list
+829000,Heart Hospital-Austin,Austin,453,903,951,903,969,end of list
+829900,North Austin Medical Center,Austin,453,6860,7131,7316,7473,end of list
+852000,Dell Childrens Medical Center,Austin,453,2323,2127,1881,2400,end of list
+854400,Central Texas Rehab Hospital,Austin,453,233,237,226,234,end of list
+855200,Austin Lakes Hospital,Austin,453,678,700,677,626,end of list
+970800,Encompass Health Rehab Hospital Austin,Austin,453,295,287,258,258,end of list
+973160,Austin Oaks Hospital,Austin,453,703,719,638,699,end of list
+973290,Arise Austin Medical Center,Austin,453,114,119,95,123,end of list
+974620,Cross Creek Hospital,Austin,453,637,638,770,822,end of list
+975169,St Davids Surgical Hospital,Austin,491,184,186,241,323,end of list
+975215,Dell Seton Medical Center at The University of Texas,Austin,453,2820,2865,2932,2930,end of list
+975269,Lake Travis ER,Austin,453,2,5,5,6,end of list
+469000,Texas Health Harris Methodist Hospital Azle,Azle,439,359,389,352,371,end of list
+234000,Ballinger Memorial Hospital District,Ballinger,399,31,52,46,55,end of list
+975418,Ascension Seton Bastrop,Bastrop,021,,,,5,end of list
+006000,Matagorda Regional Medical Center,Bay City,321,603,624,621,588,end of list
+006001,Matagorda Regional Medical Center,Bay City,321,38,35,40,42,end of list
+405000,Houston Methodist Baytown Hospital,Baytown,201,3926,3746,3991,4079,end of list
+973860,Altus Baytown Hospital Baytown Medical Center,Baytown,201,54,33,46,27,end of list
+389000,Baptist Hospitals of Southeast Texas,Beaumont,245,4031,3836,3948,3921,end of list
+444001,CHRISTUS Southeast Texas - St Elizabeth,Beaumont,245,4356,4274,4337,4470,end of list
+861900,Kate Dishman Rehab Hospital,Beaumont,245,98,90,90,119,end of list
+975111,Medical Center of Southeast Texas Beaumont Campus,Beaumont,245,19,8,41,53,end of list
+975149,PAM Rehabilitation Hospital of Beaumont,Beaumont,245,189,170,182,186,end of list
+975255,CHRISTUS Dubuis Hospital Beaumont,Beaumont,245,97,90,78,94,end of list
+975376,Mid-Jefferson Extended Care Hospital Beaumont,Beaumont,245,,,71,78,end of list
+182000,Texas Health Harris Methodist HEB,Bedford,439,3170,2579,3700,3171,end of list
+700003,Encompass Health Rehab Hospital The Mid-Cities,Bedford,439,334,346,323,336,end of list
+778000,Texas Health Springwood Behavioral Health Hospital,Bedford,439,518,525,417,461,end of list
+429001,CHRISTUS Spohn Hospital-Beeville,Beeville,025,477,449,405,470,end of list
+974820,Memorial Hermann Orthopedic and Spine Hospital,Bellaire,201,326,304,291,321,end of list
+975131,First Surgical Hospital,Bellaire,201,78,87,,,end of list
+975412,First Surgical Hospital,Bellaire,201,,,,86,end of list
+552000,Bellville Medical Center,Bellville,015,12,14,35,28,end of list
+806002,Cedar Crest Hospital,Belton,027,644,656,699,747,end of list
+343000,Reagan Memorial Hospital,Big Lake,383,10,4,8,4,end of list
+000101,Big Spring State Hospital,Big Spring,329,35,59,79,61,end of list
+975372,Scenic Mountain Medical Center,Big Spring,227,,380,499,481,end of list
+106001,TMC Bonham Hospital,Bonham,147,152,128,126,147,end of list
+654000,Golden Plains Community Hospital,Borger,233,240,187,214,206,end of list
+975156,Central Hospital of Bowie,Bowie,337,6,2,1,,end of list
+362000,Heart of Texas Healthcare System,Brady,307,72,52,51,51,end of list
+430000,Stephens Memorial Hospital,Breckenridge,429,73,61,63,54,end of list
+066000,Baylor Scott & White Hospital-Brenham,Brenham,477,337,408,384,400,end of list
+078000,Brownfield Regional Medical Center,Brownfield,445,157,115,97,128,end of list
+019000,Valley Regional Medical Center,Brownsville,061,2694,2559,2711,2579,end of list
+314001,Valley Baptist Medical Center-Brownsville,Brownsville,061,2195,2270,2351,2570,end of list
+821100,South Texas Rehab Hospital,Brownsville,061,200,192,189,181,end of list
+847500,Solara Specialty Hospitals Harlingen Brownsville,Brownsville,061,80,101,106,98,end of list
+058000,Brownwood Regional Medical Center,Brownwood,049,813,798,833,745,end of list
+002001,St Joseph Regional Health Center,Bryan,041,3803,3919,3962,4091,end of list
+717500,Physicians Centre Hospital,Bryan,041,77,71,91,97,end of list
+975162,"CHI St Joseph Rehab Hospital, Encompass Health",Bryan,041,355,353,362,353,end of list
+975270,Caprock Hospital,Bryan,041,5,3,1,4,end of list
+975391,Baylor Scott & White Medical Center Buda,Buda,209,,,,23,end of list
+973920,Baylor Emergency Medical Center,Burleson,251,81,60,55,43,end of list
+559000,Ascension Seton Highland Lakes,Burnet,053,177,172,174,217,end of list
+679000,Burleson St Joseph Health Center-Caldwell,Caldwell,051,54,37,59,52,end of list
+457000,Hemphill County Hospital,Canadian,211,30,19,19,35,end of list
+156000,Dimmit Regional Hospital,Carrizo Springs,127,163,146,148,133,end of list
+042000,Baylor Scott & White Medical Center Carrollton,Carrollton,121,1069,974,889,969,end of list
+672000,Select Specialty Hospital-Dallas,Carrollton,121,82,77,74,62,end of list
+969500,Carrollton Springs,Carrollton,121,548,567,593,541,end of list
+974800,First Texas Hospital,Carrollton,113,71,32,,,end of list
+975294,UT Health East Texas Carthage Hospital,Carthage,365,173,164,134,157,end of list
+101200,Baylor Scott & White Emergency Hospital Cedar Park,Cedar Park,491,2,1,,,end of list
+858300,Cedar Park Regional Medical Center,Cedar Park,491,1493,1585,1480,1492,end of list
+026000,Childress Regional Medical Center,Childress,075,222,194,209,221,end of list
+523000,Chillicothe Hospital,Chillicothe,197,2,,,,end of list
+323000,Texas Health Harris Methodist Hospital Cleburne,Cleburne,251,869,787,901,961,end of list
+975112,Cleveland Emergency Hospital,Cleveland,291,20,46,30,34,end of list
+975222,Texas Rural Hospitals,Cleveland,291,18,47,41,54,end of list
+070000,Goodall - Witcher Hospital,Clifton,035,101,99,66,77,end of list
+049000,Coleman County Medical Center,Coleman,083,147,153,133,126,end of list
+071000,College Station Medical Center,College Station,041,502,469,133,,end of list
+206100,Baylor Scott & White Hospital College Station,College Station,041,2037,2218,2190,2173,end of list
+973830,Rock Prairie Behavioral Health,College Station,041,379,450,479,497,end of list
+975403,CHI St Joseph Health - College Station Hospital,College Station,041,,,301,499,end of list
+972420,Baylor Emergency Medical Center,Colleyville,439,3,,,,end of list
+075000,Mitchell County Hospital,Colorado City,335,112,109,96,91,end of list
+014000,Columbus Community Hospital,Columbus,089,289,247,285,322,end of list
+495001,Comanche County Medical Center,Comanche,093,148,136,121,130,end of list
+100087,Montgomery County Mental Health Treatment Facility,Conroe,339,98,99,95,93,end of list
+508001,HCA Houston Healthcare Conroe,Conroe,339,4151,4064,4312,4572,end of list
+695000,Encompass Health Rehab Hospital The Woodlands,Conroe,339,169,192,192,171,end of list
+854100,Cornerstone Specialty Hospital Conroe,Conroe,339,78,105,102,95,end of list
+915000,Aspire Hospital,Conroe,339,207,186,210,209,end of list
+975288,Woodland Springs,Conroe,339,483,528,512,571,end of list
+975324,The Woodlands Integrative Care Hospital,Conroe,339,37,89,70,,end of list
+398000,CHRISTUS Spohn Hospital Corpus Christi,Corpus Christi,355,442,453,450,384,end of list
+398001,CHRISTUS Spohn Hospital Corpus Christi-Shoreline,Corpus Christi,355,4330,4282,4280,4109,end of list
+398002,CHRISTUS Spohn Hospital Corpus Christi-South,Corpus Christi,355,2328,2183,2389,2294,end of list
+488000,Driscoll Childrens Hospital,Corpus Christi,355,1004,841,800,995,end of list
+703000,Corpus Christi Medical Center-Bay Area,Corpus Christi,355,3160,2742,3580,3468,end of list
+703002,Corpus Christi Medical Center-Doctors Regional,Corpus Christi,355,2237,2311,2327,2323,end of list
+703003,Corpus Christi Medical Center-Heart Hospital,Corpus Christi,355,344,634,169,168,end of list
+703005,Bayview Behavioral Hospital,Corpus Christi,355,650,611,621,684,end of list
+704004,Corpus Christi Medical Center-Northwest,Corpus Christi,355,,3,1,2,end of list
+931000,South Texas Surgical Hospital,Corpus Christi,355,222,202,252,260,end of list
+973250,PAM Specialty Hospital of Corpus Christi South,Corpus Christi,355,78,25,,,end of list
+973310,Corpus Christi Rehabilitation Hospital,Corpus Christi,355,184,198,205,217,end of list
+974360,PAM Specialty Hospital of Corpus Christi North,Corpus Christi,355,74,56,45,67,end of list
+975271,PAM Rehab Hospital of Corpus Christi,Corpus Christi,355,190,204,196,222,end of list
+975303,PAM Specialty Hospital of Corpus Christi Bayfront,Corpus Christi,355,190,204,196,222,end of list
+141000,Navarro Regional Hospital,Corsicana,349,752,667,687,706,end of list
+467000,Crane Memorial Hospital,Crane,103,21,16,26,22,end of list
+975259,Crockett Medical Center,Crockett,225,38,30,32,40,end of list
+176000,Crosbyton Clinic Hospital,Crosbyton,107,22,17,7,7,end of list
+074000,Cuero Regional Hospital,Cuero,123,268,229,254,282,end of list
+114100,Lone Star Behavioral Health Cypress,Cypress,201,51,38,50,73,end of list
+975201,Memorial Hermann Cypress Hospital,Cypress,201,1204,1572,1797,1780,end of list
+975321,HCA Houston Healthcare North Cypress,Cypress,201,2206,2372,2511,2594,end of list
+262000,Coon Memorial Hospital & Home,Dalhart,111,128,123,139,164,end of list
+008001,Baylor Scott & White Medical Center Uptown,Dallas,113,278,285,255,274,end of list
+028000,Kindred Hospital-Dallas,Dallas,113,130,115,105,99,end of list
+054000,Texas Scottish Rite Hospital for Children,Dallas,113,141,162,147,158,end of list
+142000,Methodist Charlton Medical Center,Dallas,113,3816,3750,3670,3796,end of list
+143000,Childrens Medical Center-Dallas,Dallas,113,3192,2833,2700,3037,end of list
+255000,Methodist Dallas Medical Center,Dallas,113,4147,4090,4149,4270,end of list
+331000,Baylor University Medical Center,Dallas,113,10218,10517,10266,10162,end of list
+340000,Medical City Dallas Hospital,Dallas,113,8487,8748,8650,8741,end of list
+431000,Texas Health Presbyterian Hospital Dallas,Dallas,113,7086,7355,7851,7581,end of list
+448001,UT Southwestern University Hospital-Clements University,Dallas,113,5728,5907,5973,5908,end of list
+449000,Dallas Medical Center,Dallas,113,577,624,612,556,end of list
+474000,Parkland Memorial Hospital,Dallas,113,11811,11801,12860,12273,end of list
+642000,Baylor Scott & White Institute for Rehab,Dallas,113,372,362,360,354,end of list
+653001,UT Southwestern University Hospital-Zale Lipshy,Dallas,113,1231,1223,1161,1167,end of list
+653002,UT Southwestern University Hospital-Zale Lipshy Psych,Dallas,113,153,183,198,177,end of list
+653003,UT Southwestern University Hospital-Zale Lipshy Rehab,Dallas,113,205,217,213,233,end of list
+680001,Encompass Health Rehab Hospital Dallas,Dallas,113,243,252,243,262,end of list
+717000,LifeCare Hospital-Dallas,Dallas,113,112,101,83,,end of list
+766000,Medical City Green Oaks Hospital,Dallas,113,1269,1378,1568,1600,end of list
+784400,Baylor Scott & White Heart & Vascular Hospital Dallas,Dallas,113,683,643,629,577,end of list
+813100,Texas Institute for Surgery-Texas Health Presbyterian-Dallas,Dallas,113,165,134,155,165,end of list
+818200,Pine Creek Medical Center,Dallas,113,29,32,,,end of list
+860600,North Central Surgical Center,Dallas,113,421,393,390,455,end of list
+862000,Methodist Rehab Hospital,Dallas,113,290,282,305,316,end of list
+914000,Kindred Hospital Dallas Central,Dallas,113,139,150,142,122,end of list
+973780,Promise Hospital of Dallas,Dallas,113,22,33,,,end of list
+974270,Select Specialty Hospital Dallas (Downtown),Dallas,113,71,74,73,67,end of list
+975010,Our Childrens House,Dallas,113,85,100,77,129,end of list
+975129,First Baptist Medical Center,Dallas,113,72,72,98,94,end of list
+975268,City Hospital at White Rock,Dallas,113,1941,1887,1876,2006,end of list
+975400,KPC Promise Hospital of Dallas,Dallas,113,,,33,27,end of list
+975407,Medical City Heart & Spine Hospitals,Dallas,113,,,,539,end of list
+975791,LifeCare Hospital of North Texas Dallas,Dallas,113,,,,71,end of list
+837800,Hickory Trail Hospital,DeSoto,113,722,758,807,726,end of list
+839100,Vibra Specialty Hospital,DeSoto,113,108,106,76,83,end of list
+973400,Dallas Behavioral Healthcare Hospital,DeSoto,113,1010,1034,858,955,end of list
+254000,Wise Health System,Decatur,497,40,30,50,47,end of list
+254001,Wise Health System,Decatur,497,1151,1902,1305,1415,end of list
+462000,Val Verde Regional Medical Center,Del Rio,465,760,758,737,722,end of list
+847000,Texoma Medical Center,Denison,181,5533,5660,5657,5691,end of list
+208100,Baylor Scott & White The Heart Hospital Denton,Denton,121,169,191,177,188,end of list
+336001,Medical City Denton,Denton,121,2398,2317,2406,2690,end of list
+820800,Texas Health Presbyterian Hospital-Denton,Denton,121,3059,3107,3265,3042,end of list
+826800,University Behavioral Health-Denton,Denton,121,738,704,760,730,end of list
+831700,Mayhill Hospital,Denton,121,541,556,494,473,end of list
+871500,Select Rehab Hospital-Denton,Denton,121,148,171,202,210,end of list
+975163,Horizon Medical Center of Denton,Denton,121,35,285,49,33,end of list
+485000,Yoakum County Hospital,Denver City,501,175,154,154,174,end of list
+260000,Plains Memorial Hospital,Dimmitt,069,26,30,23,37,end of list
+199000,Memorial Hospital,Dumas,341,220,185,163,198,end of list
+560000,Rice Medical Center,Eagle Lake,089,30,39,43,44,end of list
+547001,Fort Duncan Regional Medical Center,Eagle Pass,323,1285,1233,1379,1367,end of list
+222000,Eastland Memorial Hospital,Eastland,133,169,133,153,130,end of list
+202000,Concho County Hospital,Eden,095,25,13,21,15,end of list
+140002,South Texas Health System Edinburg,Edinburg,215,3097,2791,2693,3084,end of list
+797100,Doctors Hospital-Renaissance,Edinburg,215,5508,5313,5318,5432,end of list
+797101,Womens Hospital-Renaissance,Edinburg,215,4174,4397,5016,4670,end of list
+830000,Cornerstone Regional Hospital,Edinburg,215,117,113,107,89,end of list
+017000,Jackson County Hospital,Edna,239,35,41,57,36,end of list
+426000,El Campo Memorial Hospital,El Campo,481,165,169,171,175,end of list
+000118,El Paso Psychiatric Center,El Paso,141,163,178,180,172,end of list
+130000,The Hospitals of Providence Memorial Campus,El Paso,141,4125,3744,3933,3748,end of list
+180000,Las Palmas Medical Center,El Paso,141,3147,3074,3333,3592,end of list
+263000,University Medical Center of El Paso,El Paso,141,4505,4549,4421,4174,end of list
+266000,The Hospitals of Providence Sierra Campus,El Paso,141,1801,1724,1695,1619,end of list
+319000,Del Sol Medical Center,El Paso,141,4524,4484,4485,4439,end of list
+701000,Premier Specialty Hospital of El Paso,El Paso,141,37,52,37,39,end of list
+718002,Highlands Rehabilitation Hospital,El Paso,141,177,161,189,142,end of list
+727100,Kindred Hospital El Paso,El Paso,141,129,134,133,128,end of list
+801300,Legent Hospital of El Paso,El Paso,141,98,109,114,113,end of list
+841300,El Paso LTAC Hospital,El Paso,141,54,46,69,55,end of list
+858600,El Paso Behavioral Health System,El Paso,141,1595,1592,1503,1468,end of list
+865000,The Hospitals of Providence East Campus,El Paso,141,3249,3348,3564,3473,end of list
+969700,El Paso Childrens Hospital,El Paso,141,1186,940,924,1040,end of list
+975188,The Hospitals of Providence Transmountain Campus,El Paso,141,1248,1347,1495,1291,end of list
+975338,The Hospitals of Providence Northeast Campus,El Paso,141,49,50,70,87,end of list
+975374,Rio Vista Behavioral Health,El Paso,141,37,107,260,373,end of list
+975398,Cobalt Rehabilitation Hospital El Paso,El Paso,141,,,,2,end of list
+136000,Schleicher County Medical Center,Eldorado,413,15,7,9,15,end of list
+490000,Electra Memorial Hospital,Electra,485,77,76,88,82,end of list
+714500,Ennis Regional Medical Center,Ennis,139,158,157,146,164,end of list
+975198,Freestone Medical Center,Fairfield,161,72,72,86,87,end of list
+433000,Connally Memorial Medical Center,Floresville,493,201,211,175,222,end of list
+943000,Texas Health Presbyterian Hospital Flower Mound,Flower Mound,121,1956,1854,1956,2030,end of list
+975142,Icare Rehabilitation Hospital,Flower Mound,121,71,55,,,end of list
+356000,Pecos County Memorial Hospital,Fort Stockton,371,169,114,115,164,end of list
+047000,Texas Health Huguley Hospital,Fort Worth,439,3035,2901,3034,2989,end of list
+235000,Texas Health Harris Methodist Hospital-Fort Worth,Fort Worth,439,8659,8827,9314,9558,end of list
+332000,Cook Childrens Medical Center,Fort Worth,439,3198,2979,2874,3732,end of list
+363000,Baylor Scott & White All Saints Medical Center-Fort Worth,Fort Worth,439,5811,5982,6008,6028,end of list
+409000,John Peter Smith Hospital,Fort Worth,439,7384,7621,7991,7577,end of list
+477000,Medical City Fort Worth,Fort Worth,439,2610,2656,2921,2922,end of list
+627000,Texas Health Harris Methodist Hospital-Southwest Fort Worth,Fort Worth,439,3518,3569,3734,3747,end of list
+652000,Texas Health Specialty Hospital-Fort Worth,Fort Worth,439,22,15,20,24,end of list
+662000,Encompass Health Rehab Hospital City View,Fort Worth,439,340,357,350,335,end of list
+690600,LifeCare Hospital-Fort Worth,Fort Worth,439,115,125,107,,end of list
+800000,Kindred Hospital Tarrant County Fort Worth SW,Fort Worth,439,206,216,164,164,end of list
+800700,Kindred Hospital-Fort Worth,Fort Worth,439,128,120,116,140,end of list
+804500,Baylor Scott & White Surgical Hospital-Fort Worth,Fort Worth,439,398,471,403,519,end of list
+861400,USMD Hospital Fort Worth,Fort Worth,439,27,44,27,19,end of list
+873800,Baylor Scott & White Institute for Rehab-Fort Worth,Fort Worth,439,158,166,128,135,end of list
+902200,Texas Rehabilitation Hospital-Fort Worth,Fort Worth,439,343,337,345,332,end of list
+972900,Texas Health Harris Methodist Hospital Alliance,Fort Worth,439,2059,2045,2128,2093,end of list
+973430,Mesa Springs,Fort Worth,439,741,770,775,717,end of list
+973770,Wellbridge Hospital of Fort Worth,Fort Worth,439,233,202,168,220,end of list
+973840,Wise Health Surgical Hospital,Fort Worth,439,58,94,96,120,end of list
+974490,Medical City Alliance,Fort Worth,439,1396,1320,1301,1350,end of list
+975121,JPS Health Network - Trinity Springs North,Fort Worth,439,36,43,33,37,end of list
+975167,Texas Health Hospital Clearfork,Fort Worth,439,387,342,388,346,end of list
+975792,LifeCare Hospitals of Fort Worth,Fort Worth,439,,,,82,end of list
+219000,Hill Country Memorial Hospital,Fredericksburg,171,733,705,688,717,end of list
+200000,Parmer Medical Center,Friona,369,17,29,20,23,end of list
+100093,Baylor Scott & White Institute for Rehab Frisco,Frisco,121,191,204,186,215,end of list
+787400,Baylor Scott & White Medical Center-Frisco,Frisco,121,1331,1434,1344,1479,end of list
+974290,Haven Behavioral Hospital of Frisco,Frisco,121,257,310,352,343,end of list
+975139,Medical City Frisco,Frisco,121,966,1075,1231,1256,end of list
+975285,Baylor Scott & White Medical Center Centennial,Frisco,085,1228,1128,1043,1006,end of list
+298000,North Texas Medical Center,Gainesville,097,350,314,291,384,end of list
+000102,UT Medical Branch Hospital,Galveston,167,7292,7308,7559,7227,end of list
+247000,Shriners Hospital for Children-Galveston,Galveston,167,27,26,36,45,end of list
+974990,Garland Behavioral Hospital,Garland,113,509,520,551,597,end of list
+975404,Perimeter Behavioral Hospital of Dallas,Garland,113,,,,63,end of list
+346000,Coryell Memorial Hospital,Gatesville,099,166,159,179,165,end of list
+835700,St Davids Georgetown Hospital,Georgetown,491,1505,1458,1482,1554,end of list
+973730,Rock Springs,Georgetown,491,523,544,625,514,end of list
+973910,Georgetown Behavioral Health Institute,Georgetown,491,843,872,831,840,end of list
+059000,Glen Rose Medical Center,Glen Rose,425,67,60,55,58,end of list
+103000,Memorial Hospital,Gonzales,177,193,201,190,167,end of list
+094000,Graham Hospital District,Graham,503,132,113,130,103,end of list
+424000,Lake Granbury Medical Center,Granbury,221,1005,970,1085,1056,end of list
+975249,Baylor Scott & White Emergency Hospital-Grand Prairie,Grand Prairie,113,42,40,43,31,end of list
+974380,Texas General Hospital Van Zandt Regional Medical Center,Grand Saline,467,20,48,,,end of list
+513000,Baylor Scott & White Medical Center-Grapevine,Grapevine,439,3630,3750,3691,3815,end of list
+858200,Sagecrest Hospital Grapevine,Grapevine,439,44,41,46,20,end of list
+085000,Hunt Regional Medical Center Greenville,Greenville,231,1772,1680,1829,1893,end of list
+754000,Glen Oaks Hospital,Greenville,231,501,495,473,463,end of list
+052000,Limestone Medical Center,Groesbeck,293,60,49,55,66,end of list
+527000,Lavaca Medical Center,Hallettsville,285,131,93,98,86,end of list
+640000,Hamilton General Hospital,Hamilton,193,166,137,110,133,end of list
+305000,Hamlin Memorial Hospital,Hamlin,253,16,17,,,end of list
+971000,Seton Medical Center Harker Heights,Harker Heights,027,1321,1293,1270,1185,end of list
+000104,Rio Grande State Center,Harlingen,061,166,200,202,189,end of list
+400000,Valley Baptist Medical Center,Harlingen,061,4324,3998,4066,4246,end of list
+788002,Harlingen Medical Center,Harlingen,061,1271,1175,1073,1266,end of list
+840700,Solara Specialty Hospitals Harlingen,Harlingen,061,79,102,95,87,end of list
+975164,Palms Behavioral Health,Harlingen,061,767,682,589,698,end of list
+572000,Haskell Memorial Hospital,Haskell,207,39,63,37,53,end of list
+522000,Sabine County Hospital,Hemphill,403,65,39,48,44,end of list
+975295,UT Health East Texas Henderson Hospital,Henderson,401,359,317,355,404,end of list
+193000,Clay County Memorial Hospital,Henrietta,077,39,21,28,22,end of list
+420000,Hereford Regional Medical Center,Hereford,117,188,202,166,153,end of list
+383000,Hill Regional Hospital,Hillsboro,217,269,246,254,254,end of list
+427000,Medina Regional Hospital,Hondo,325,224,168,168,187,end of list
+975233,The Hospitals of Providence Horizon City Campus,Horizon City,141,58,59,64,45,end of list
+000105,UT MD Anderson Cancer Center,Houston,201,7147,7373,7072,6996,end of list
+000115,Harris County Psychiatric Center,Houston,201,1982,2170,2244,2317,end of list
+007000,Womans Hospital-Texas,Houston,201,5946,6175,6670,6354,end of list
+030000,United Memorial Medical Center,Houston,201,153,191,178,179,end of list
+112100,Encompass Health Rehab Hospital Cypress,Houston,201,332,336,343,325,end of list
+117000,Texas Childrens Hospital,Houston,201,4243,4087,4115,4650,end of list
+117002,Texas Childrens Hospital West Campus,Houston,201,837,720,749,945,end of list
+117100,Texas Childrens Hospital-Pavilion for Women,Houston,201,3214,3230,3562,3312,end of list
+118000,CHI St Lukes Health Baylor College of Medicine Medical Center,Houston,201,5775,5784,5458,5436,end of list
+119000,Memorial Hermann Southeast Hospital,Houston,201,4166,4137,4021,3968,end of list
+124000,Houston Methodist Hospital,Houston,201,9946,10638,10503,10775,end of list
+164000,TIRR Memorial Hermann,Houston,201,382,410,380,365,end of list
+172000,Memorial Hermann Greater Heights Hospital,Houston,201,4058,4037,3969,3937,end of list
+229000,HCA Houston Healthcare Northwest,Houston,201,4036,4095,4533,4742,end of list
+302000,Memorial Hermann Memorial City Medical Center,Houston,201,5990,6149,6294,6340,end of list
+337001,HCA Houston Healthcare West,Houston,201,3616,3683,3945,3921,end of list
+347000,Memorial Hermann - Texas Medical Center,Houston,201,8874,8882,8960,9373,end of list
+384000,Harris Health System Lyndon B Johnson Hospital,Houston,201,3302,3404,3408,3204,end of list
+390000,HCA Houston Healthcare Medical Center,Houston,201,713,879,956,1112,end of list
+407000,Memorial Hermann Southwest Hospital,Houston,201,5076,5318,5486,5039,end of list
+459000,Harris Health System Ben Taub Hospital,Houston,201,4687,4834,4978,4925,end of list
+459001,Harris Health System Quentin Mease Hospital,Houston,201,18,,,,end of list
+526000,Shriners Hospitals for Children,Houston,201,73,81,65,50,end of list
+606000,HCA Houston Healthcare Cypress Fairbanks,Houston,201,1416,,,,end of list
+674000,TOPS Surgical Specialty Hospital,Houston,201,138,166,175,200,end of list
+676000,Kindred Hospital-Houston Medical Center,Houston,201,204,175,152,144,end of list
+698005,Cornerstone Specialty Hospitals Bellaire,Houston,201,86,89,102,90,end of list
+706000,Kindred Hospital Houston NW,Houston,201,139,135,118,98,end of list
+712500,HealthBridge Childrens Hospital-Houston,Houston,201,17,22,29,23,end of list
+724700,Houston Methodist Willowbrook Hospital,Houston,201,5721,5870,6236,6235,end of list
+740000,St Lukes Hospital at the Vintage,Houston,201,1219,1384,1354,1452,end of list
+744001,Cypress Creek Hospital,Houston,201,1013,1065,1076,1070,end of list
+755001,West Oaks Hospital,Houston,201,1626,1608,1579,1606,end of list
+763000,HCA Houston Healthcare Specialty Hospital Medical Center,Houston,201,88,64,76,21,end of list
+782001,Intracare North Hospital,Houston,201,540,541,524,523,end of list
+792000,Texas Orthopedic Hospital,Houston,201,906,981,907,1076,end of list
+792600,Kindred Hospital Spring,Houston,201,148,103,110,134,end of list
+794200,Menninger Clinic,Houston,201,164,170,159,170,end of list
+800010,Houston Methodist West Hospital,Houston,201,3566,3552,3732,3786,end of list
+838600,St Joseph Medical Center,Houston,201,3298,3152,3434,3636,end of list
+941000,Kindred Hospital The Heights,Houston,201,142,145,120,113,end of list
+945500,Hermann Drive Surgical Hospital,Houston,201,155,47,,,end of list
+969200,Behavioral Hospital-Bellaire,Houston,201,973,997,932,943,end of list
+970600,Encompass Health Rehab Hospital The Vintage,Houston,201,310,329,317,307,end of list
+972200,Cornerstone Specialty Hospitals Medical Center,Houston,201,80,99,86,75,end of list
+973100,St Joseph Medical Center-Heights,Houston,201,205,206,143,,end of list
+974370,Houston Behavioral Healthcare Hospital,Houston,201,864,974,1171,1474,end of list
+975124,Sun Behavioral Houston,Houston,201,994,1075,1076,1137,end of list
+975130,AD Hospital East,Houston,201,64,60,73,69,end of list
+975152,Providence Hospital of North Houston,Houston,201,62,74,,,end of list
+975166,First Texas Hospital,Houston,201,62,58,53,45,end of list
+975216,Sacred Oak Medical Center,Houston,201,225,269,216,227,end of list
+975247,Trinity Hospital,Houston,201,,1,,1,end of list
+975250,"Altus Houston Hospital, Celestial Hospital, Odyssey Hospital",Houston,201,52,42,63,52,end of list
+975326,The Heights Hospital,Houston,201,,22,70,46,end of list
+975337,UGH Pain & Spine,Houston,201,1,28,15,,end of list
+975365,Baylor St Lukes Medical Center McNair Campus,Houston,201,,25,398,407,end of list
+975397,Cobalt Rehabilitation Houston Heights,Houston,201,,,,30,end of list
+975414,River Oaks Hospitals & Clinics,Houston,201,,,,4,end of list
+975788,Cornerstone Specialty Hospitals Houston Medical Center,Houston,201,,,,24,end of list
+616000,Encompass Health Rehab Hospital Humble,Humble,201,287,257,299,333,end of list
+847100,Memorial Hermann Northeast,Humble,201,3465,3416,3719,3895,end of list
+865900,SE Texas ER and Hospital,Humble,201,,132,5,28,end of list
+969600,Kindred Rehab Hospital Northeast Houston,Humble,201,166,212,,,end of list
+975234,Townsen Memorial Hospital,Humble,201,11,3,2,11,end of list
+975394,PAM Rehabilitation Hospital of Humble,Humble,201,,,127,207,end of list
+061000,Huntsville Memorial Hospital,Huntsville,471,1196,1166,1110,1077,end of list
+975154,Saint Camillus Medical Center,Hurst,439,20,23,34,38,end of list
+258000,Iraan General Hospital,Iraan,371,11,10,18,9,end of list
+300000,Baylor Scott & White Medical Center-Irving,Irving,113,2943,2842,2719,2810,end of list
+799500,Baylor Scott & White Surgical Hospital Las Colinas,Irving,113,159,221,192,226,end of list
+814000,Medical City Las Colinas,Irving,113,1786,1631,2025,1938,end of list
+046000,Faith Community Hospital,Jacksboro,237,118,107,99,88,end of list
+725400,Christus Mother Frances Hospital-Jacksonville,Jacksonville,073,176,138,169,148,end of list
+975296,UT Health East Texas Jacksonville Hospital,Jacksonville,073,349,335,347,396,end of list
+038001,CHRISTUS Southeast Texas - Jasper Memorial,Jasper,241,203,161,150,161,end of list
+975221,Methodist Hospital South,Jourdanton,013,509,495,453,424,end of list
+205000,Kimble Hospital,Junction,267,41,26,19,34,end of list
+534001,Memorial Hermann Katy Hospital,Katy,157,3522,3426,3512,3552,end of list
+838400,Memorial Hermann Rehab Hospital Katy,Katy,201,208,188,214,149,end of list
+973620,Houston Methodist Continuing Care Hospital,Katy,201,118,112,108,114,end of list
+974500,Oceans Behavioral Hospital of Katy,Katy,201,229,274,235,286,end of list
+975389,Encompass Health Rehabilitation Hospital of Katy,Katy,157,,,26,166,end of list
+303000,Texas Health Presbyterian Hospital-Kaufman,Kaufman,257,272,261,250,258,end of list
+973540,Baylor Emergency Medical Center at Keller,Keller,439,38,41,48,45,end of list
+357000,Otto Kaiser Memorial Hospital,Kenedy,255,23,32,26,25,end of list
+062000,Winkler County Memorial Hospital,Kermit,495,42,37,30,26,end of list
+000106,Kerrville State Hospital,Kerrville,265,10,17,12,14,end of list
+406000,Peterson Regional Medical Center,Kerrville,265,1093,1094,1124,1125,end of list
+397001,Adventhealth Central Texas,Killeen,027,1986,1982,1824,1871,end of list
+216001,CHRISTUS Spohn Hospital-Kleberg,Kingsville,273,726,694,659,652,end of list
+675000,HCA Houston Healthcare Kingwood,Kingwood,201,6099,5697,6145,5974,end of list
+813800,Memorial Hermann Specialty Hospital Kingwood,Kingwood,201,72,68,89,104,end of list
+818600,Kingwood Pines Hospital,Kingwood,201,828,910,801,802,end of list
+975258,Kingwood Emergency Hospital,Kingwood,201,39,31,47,20,end of list
+568000,Knox County Hospital,Knox City,275,24,16,15,28,end of list
+921000,Ascension Seton Hays,Kyle,209,2234,2332,2397,2445,end of list
+973970,Warm Springs Rehab Hospital Kyle,Kyle,209,258,246,259,259,end of list
+975358,Kyle ER & Hospital,Kyle,209,,7,5,21,end of list
+823400,St Marks Medical Center,La Grange,149,276,279,224,267,end of list
+436000,CHI St Lukes Health Brazosport,Lake Jackson,039,1047,909,984,923,end of list
+975165,Baylor Scott & White Medical Center Lakeway,Lakeway,453,919,925,975,974,end of list
+975313,Baylor Scott & White Institute for Rehabilitation - Lakeway,Lakeway,453,108,124,109,106,end of list
+341000,Medical Arts Hospital,Lamesa,115,86,60,57,100,end of list
+397000,Adventhealth Rollins Brook,Lampasas,281,151,124,86,83,end of list
+973180,Crescent Medical Center Lancaster,Lancaster,113,211,255,299,277,end of list
+207001,Laredo Medical Center,Laredo,479,3863,4040,4358,4147,end of list
+301000,Doctors Hospital-Laredo,Laredo,479,2226,2137,2260,2239,end of list
+836300,Laredo Specialty Hospital,Laredo,479,105,97,111,97,end of list
+974470,Laredo Rehabilitation Hospital,Laredo,479,113,111,117,109,end of list
+975416,Stat Specialty Hospital of Laredo,Laredo,479,,,,1,end of list
+718000,Devereux Texas Treatment Network,League City,167,5,16,7,9,end of list
+975140,UTMB League City Campus Hospital,League City,167,815,417,509,589,end of list
+307000,Covenant Hospital-Levelland,Levelland,219,246,233,195,206,end of list
+394000,Medical City Lewisville,Lewisville,121,2099,2073,1975,2072,end of list
+089001,Liberty Dayton Regional Medical Center,Liberty,291,24,25,24,20,end of list
+217000,Lamb Healthcare Center,Littlefield,279,99,93,87,90,end of list
+466000,CHI St Lukes Health - Memorial Livingston,Livingston,373,569,550,493,535,end of list
+476000,Baylor Scott & White Medical Center Llano,Llano,299,61,39,41,24,end of list
+010000,WJ Mangold Memorial Hospital,Lockney,153,47,31,40,34,end of list
+029000,CHRISTUS Good Shepherd Medical Center-Longview,Longview,183,4274,3990,4050,4112,end of list
+106100,Oceans Behavioral Hospital of Longview,Longview,183,130,148,156,140,end of list
+525000,Longview Regional Medical Center,Longview,183,3027,3002,3056,3300,end of list
+794600,Select Specialty Hospital-Longview,Longview,183,73,73,77,69,end of list
+944000,Magnolia Behavioral Hospital of East Texas,Longview,183,50,,,,end of list
+975386,Everest Rehabilitation Hospital Longview,Longview,183,,,18,69,end of list
+013001,Grace Medical Center,Lubbock,303,193,174,168,189,end of list
+145000,University Medical Center,Lubbock,303,6051,5959,5842,5790,end of list
+465000,Covenant Medical Center,Lubbock,303,3936,4079,3949,3786,end of list
+686000,Covenant Childrens Hospital,Lubbock,303,1955,1760,1843,1952,end of list
+801500,Lubbock Heart Hospital,Lubbock,303,708,678,552,619,end of list
+804000,Sunrise Canyon,Lubbock,303,218,202,197,154,end of list
+846200,Covenant Specialty Hospital,Lubbock,303,92,95,90,76,end of list
+975020,TrustPoint Rehabilitation Hospital of Lubbock,Lubbock,303,364,365,353,318,end of list
+975371,South Plains Rehab Hospital,Lubbock,303,,41,255,268,end of list
+129000,CHI St Lukes Health Memorial Lufkin,Lufkin,005,1637,1647,1677,1636,end of list
+481000,Woodland Heights Medical Center,Lufkin,005,1672,1628,1752,1730,end of list
+973420,Oceans Behavioral Hospital of Lufkin,Lufkin,005,128,135,146,131,end of list
+975319,PAM Specialty Hospital of Lufkin,Lufkin,005,84,79,104,84,end of list
+597000,Ascension Seton Edgar B Davis,Luling,055,137,161,166,157,end of list
+848200,PAM Specialty Hospital of Luling,Luling,055,141,150,157,177,end of list
+041000,CHI St Joseph Health Madison Hospital,Madisonville,313,57,63,59,53,end of list
+657000,Kindred Hospital-Mansfield,Mansfield,439,105,120,105,99,end of list
+842800,Methodist Mansfield Medical Center,Mansfield,439,3412,3343,3373,3487,end of list
+974220,Baylor Emergency Medical Center,Mansfield,439,42,41,39,29,end of list
+975378,Trusted Medical Centers Mansfield,Mansfield,439,,,3,,end of list
+974940,Baylor Scott & White Medical Center Marble Falls,Marble Falls,053,739,684,720,655,end of list
+517000,Falls Community Hospital & Clinic,Marlin,145,40,35,28,26,end of list
+020000,CHRISTUS Good Shepherd Medical Center-Marshall,Marshall,203,575,521,474,477,end of list
+601000,Rio Grande Regional Hospital,McAllen,215,4253,3984,4104,4404,end of list
+802001,South Texas Health System McAllen,McAllen,215,4043,3907,4288,4510,end of list
+802003,South Texas Health System Heart,McAllen,215,934,841,830,877,end of list
+816300,Solara Specialty Hospitals McAllen,McAllen,215,143,166,147,158,end of list
+240000,McCamey Hospital,McCamey,461,7,15,14,25,end of list
+246000,Medical City-McKinney,McKinney,085,3381,3586,3667,3924,end of list
+937000,Methodist McKinney Hospital,McKinney,085,265,210,244,377,end of list
+971900,Baylor Scott & White Medical Center McKinney,McKinney,085,2628,2709,2741,2724,end of list
+975385,Baylor Scott & White The Heart Hospital McKinney,McKinney,085,,,36,64,end of list
+315003,Dallas Regional Medical Center,Mesquite,113,1978,1887,1894,1930,end of list
+670001,Mesquite Rehab Hospital,Mesquite,113,150,152,151,160,end of list
+840000,Mesquite Specialty Hospital,Mesquite,113,62,75,87,62,end of list
+505000,Parkview Regional Hospital,Mexia,293,160,173,153,152,end of list
+101400,Oceans Behavioral Hospital of the Permian Basin,Midland,329,393,444,406,484,end of list
+452000,Midland Memorial Hospital,Midland,329,3323,3178,3271,3405,end of list
+693000,Encompass Health Rehab Hospital-Midland Odessa,Midland,329,427,441,423,387,end of list
+034000,Palo Pinto General Hospital,Mineral Wells,363,484,502,457,472,end of list
+370000,Mission Regional Medical Center,Mission,215,2464,2319,2302,2431,end of list
+468000,Ward Memorial Hospital,Monahans,475,106,87,32,93,end of list
+159000,Cochran Memorial Hospital,Morton,079,2,1,2,2,end of list
+137000,Titus Regional Medical Center,Mount Pleasant,449,966,899,1064,716,end of list
+365000,Muenster Memorial Hospital,Muenster,097,49,26,24,57,end of list
+631000,Muleshoe Area Medical Center,Muleshoe,017,50,49,49,40,end of list
+973550,Baylor Emergency Medical Center at Murphy,Murphy,085,28,36,33,46,end of list
+392000,Nacogdoches Medical Center,Nacogdoches,347,1136,1121,1282,1213,end of list
+478000,Nacogdoches Memorial Hospital,Nacogdoches,347,1013,1032,933,979,end of list
+973640,Houston Methodist St John Hospital,Nassau Bay,201,1824,1922,1888,1709,end of list
+728800,CHI St Joseph Health Grimes Hospital,Navasota,185,48,45,63,46,end of list
+127000,Mid-Jefferson Extended Care Hospital,Nederland,245,144,156,121,130,end of list
+124100,PAM Specialty Hospital of New Braunfels,New Braunfels,091,175,142,148,148,end of list
+786200,New Braunfels Regional Rehab Hospital,New Braunfels,091,206,202,224,219,end of list
+863300,CHRISTUS Santa Rosa Hospital New Braunfels,New Braunfels,091,1191,1154,1209,1166,end of list
+973850,Resolute Health,New Braunfels,091,1158,1158,,2210,end of list
+348000,Nocona General Hospital,Nocona,337,61,81,60,81,end of list
+437000,Medical City North Hills,North Richland Hills,439,1722,1674,1689,1792,end of list
+181000,Medical Center Hospital,Odessa,135,3201,3016,3028,3143,end of list
+425000,Odessa Regional Medical Center,Odessa,135,2017,1968,1988,1877,end of list
+974720,ContinueCare Hospital at Medical Center Odessa,Odessa,135,59,60,57,57,end of list
+294000,Hamilton Hospital,Olney,503,77,64,74,82,end of list
+574001,Palacios Community Medical Center,Palacios,321,11,10,21,10,end of list
+629001,Palestine Regional Medical Center,Palestine,001,886,904,965,888,end of list
+832900,Pampa Regional Medical Center,Pampa,179,467,412,341,272,end of list
+095003,Paris Regional Medical Center North Campus,Paris,277,1872,1917,2130,2193,end of list
+349001,HCA Houston Healthcare Southeast,Pasadena,201,3854,3754,4073,4076,end of list
+694100,Surgery Specialty Hospitals of America-Southeast Houston,Pasadena,201,47,43,39,25,end of list
+801000,Kindred Hospital Bay Area,Pasadena,201,159,170,173,140,end of list
+846100,St Lukes Patients Medical Center,Pasadena,201,822,795,843,788,end of list
+975363,Oceans Behavioral Hospital of Pasadena,Pasadena,201,,62,93,124,end of list
+974390,HCA Houston Healthcare Pearland,Pearland,039,799,724,844,909,end of list
+975138,Memorial Hermann Pearland Hospital,Pearland,039,1214,1230,1289,1028,end of list
+975246,Encompass Health Rehab Hospital Pearland,Pearland,039,265,280,279,283,end of list
+441000,Frio Regional Hospital,Pearsall,163,46,26,75,110,end of list
+367000,Reeves County Hospital,Pecos,389,249,241,239,225,end of list
+098000,Ochiltree General Hospital,Perryton,357,164,142,162,155,end of list
+975340,Baylor Scott & White Medical Center Pflugerville,Pflugerville,453,96,130,154,181,end of list
+975297,UT Health East Pittsburg Hospital,Pittsburg,063,195,206,180,178,end of list
+146000,Covenant Hospital-Plainview,Plainview,189,485,464,406,445,end of list
+816001,Allegiance Behavioral Health Center-Plainview,Plainview,189,83,82,66,66,end of list
+143001,Childrens Medical Center Plano,Plano,085,697,556,527,862,end of list
+214000,Medical City Plano,Plano,085,5739,5969,6239,6446,end of list
+664000,Texas Health Presbyterian Hospital-Plano,Plano,085,5079,5175,5163,5215,end of list
+670000,Encompass Health Rehab Hospital Plano,Plano,085,417,439,390,378,end of list
+720000,Texas Health Seay Behavioral Health Hospital,Plano,085,574,529,445,438,end of list
+789800,LifeCare Hospital-Plano,Plano,085,146,149,121,,end of list
+814001,Baylor Scott & White Medical Center-Plano,Plano,085,1720,1676,1642,1750,end of list
+815300,Texas Health Center-Diagnostics & Surgery Plano,Plano,085,152,188,174,177,end of list
+844000,Baylor Scott & White The Heart Hospital Plano,Plano,085,1429,1440,1444,1399,end of list
+971200,Accel Rehab Hospital of Plano,Plano,085,128,124,133,112,end of list
+973390,Legent Hospital for Special Surgery,Plano,085,35,41,51,72,end of list
+974160,Wellbridge Hospital of Plano,Plano,085,178,184,182,171,end of list
+974920,Plano Surgical Hospital,Plano,085,20,18,,,end of list
+975178,Eating Recovery Center,Plano,085,51,1,31,55,end of list
+975790,LifeCare Hospital of Plano,Plano,085,,,,110,end of list
+299001,CHRISTUS Southeast Texas -St Mary,Port Arthur,245,33,28,3,,end of list
+464002,Medical Center-Southeast Texas,Port Arthur,245,1812,1671,1914,1773,end of list
+487000,Memorial Medical Center,Port Lavaca,057,211,193,126,128,end of list
+102000,Hardeman County Memorial Hospital,Quanah,197,34,34,28,28,end of list
+975298,UT Health East Texas Quitman Hospital,Quitman,499,287,222,214,246,end of list
+290000,Rankin County Hospital District,Rankin,461,14,9,5,10,end of list
+368000,Refugio County Memorial Hospital District,Refugio,391,6,14,13,14,end of list
+549000,Methodist Richardson Medical Center,Richardson,113,401,401,357,360,end of list
+549001,Bush Renner,Richardson,085,3081,3131,3172,3187,end of list
+861300,Encompass Health Rehab Hospital Richardson,Richardson,113,335,359,341,335,end of list
+975143,Vibra Hospital of Richardson,Richardson,113,37,39,40,45,end of list
+975168,Eminent Medical Center,Richardson,113,20,24,32,49,end of list
+230000,Oakbend Medical Center,Richmond,157,801,728,770,710,end of list
+230001,Oakbend Medical Center,Richmond,157,817,665,687,709,end of list
+974260,Westpark Springs,Richmond,157,621,582,583,622,end of list
+393000,Starr County Memorial Hospital,Rio Grande City,427,258,265,215,253,end of list
+859900,Texas Health Hospital Rockwall,Rockwall,397,1027,991,1003,1071,end of list
+973610,Baylor Emergency Medical Center at Rockwall,Rockwall,397,50,43,38,62,end of list
+355000,Fisher County Hospital District,Rotan,151,28,25,29,16,end of list
+608000,Round Rock Medical Center,Round Rock,491,2903,3062,3006,2988,end of list
+852600,Baylor Scott & White Medical Center Round Rock,Round Rock,491,1855,1709,1797,1742,end of list
+861700,Ascension Seton Williamson,Round Rock,491,1939,1938,1866,1827,end of list
+866100,Encompass Health Rehab Hospital Round Rock,Round Rock,491,336,343,381,378,end of list
+973410,Cornerstone Specialty Hospitals Round Rock,Round Rock,491,78,87,80,84,end of list
+975339,PAM Rehab Hospital Round Rock,Round Rock,491,134,172,212,196,end of list
+975286,Baylor Scott & White Medical Center Lake Pointe,Rowlette,113,2015,2231,2280,2124,end of list
+000107,Rusk State Hospital,Rusk,073,74,72,76,91,end of list
+056000,San Angelo Community Medical Center,San Angelo,451,1161,1001,1000,945,end of list
+168000,Shannon West Texas Memorial Hospital,San Angelo,451,4046,4042,3865,3787,end of list
+747000,River Crest Hospital,San Angelo,451,640,654,717,748,end of list
+000108,Texas Center for Infectious Disease,San Antonio,029,32,15,29,17,end of list
+000110,San Antonio State Hospital,San Antonio,029,144,161,156,147,end of list
+081001,Mission Trail Baptist Hospital,San Antonio,029,1690,1729,1582,1676,end of list
+101100,Baptist Emergency Hospital Hausman,San Antonio,029,66,49,55,50,end of list
+114001,Baptist Medical Center,San Antonio,029,3998,3883,4043,4014,end of list
+134001,Northeast Baptist Hospital,San Antonio,029,3210,3169,3161,3109,end of list
+154000,Methodist Hospital,San Antonio,029,10978,10785,11407,11758,end of list
+154001,Methodist Specialty & Transplant Hospital,San Antonio,029,2922,3161,3196,3100,end of list
+154002,Northeast Methodist Hospital,San Antonio,029,2576,2589,2561,2569,end of list
+154003,Methodist Texsan Hospital,San Antonio,029,1452,1500,1462,1518,end of list
+158000,University Hospital,San Antonio,029,7959,8078,8615,8589,end of list
+228001,Southwest General Hospital,San Antonio,029,2499,2309,2305,2318,end of list
+283000,Metropolitan Methodist Hospital,San Antonio,029,4966,5149,5385,5292,end of list
+339001,CHRISTUS Santa Rosa Medical Center,San Antonio,029,1524,1393,1368,1347,end of list
+339002,CHRISTUS Santa Rosa Hospital-Westover Hills,San Antonio,029,2925,2899,2924,2901,end of list
+396001,Nix Specialty Health Center,San Antonio,029,520,523,483,,end of list
+396002,Nix Health Care System,San Antonio,029,721,581,299,,end of list
+503001,St Lukes Baptist Hospital,San Antonio,029,3563,3540,3685,3770,end of list
+634000,Childrens Hospital of San Antonio,San Antonio,029,1644,1449,1463,1692,end of list
+636000,Encompass Health Rehab Hospital San Antonio,San Antonio,029,304,294,259,260,end of list
+645000,Kindred Hospital-San Antonio,San Antonio,029,84,105,77,83,end of list
+647000,Baptist Emergency Hospital Thousand Oaks,San Antonio,029,62,39,66,48,end of list
+677001,North Central Baptist Hospital,San Antonio,029,5095,5258,5239,5404,end of list
+681001,Methodist Ambulatory Surgery Hospital-Northwest,San Antonio,029,126,106,87,107,end of list
+723001,Laurel Ridge Treatment Center,San Antonio,029,1881,1924,1927,2090,end of list
+737000,Clarity Child Guidance Center,San Antonio,029,571,644,657,870,end of list
+786800,South Texas Spine & Surgical Hospital,San Antonio,029,319,384,429,470,end of list
+815000,LifeCare Hospital-San Antonio,San Antonio,029,144,147,102,,end of list
+844600,Warm Springs Rehab Hospital-San Antonio,San Antonio,029,241,319,293,312,end of list
+844601,Warm Springs Rehab Hospital Thousand Oaks,San Antonio,029,206,210,224,218,end of list
+844602,Warm Springs Rehab Hospital Westover Hills,San Antonio,029,244,263,267,285,end of list
+852100,Foundation Surgical Hospital-San Antonio,San Antonio,029,273,280,296,397,end of list
+874100,Methodist Stone Oak Hospital,San Antonio,029,3694,3825,4081,4119,end of list
+972810,Baptist Emergency Hospital Overlook,San Antonio,029,61,50,40,48,end of list
+972960,PAM Specialty Hospital of San Antonio,San Antonio,029,85,85,76,81,end of list
+973000,Baptist Emergency Hospital Westover Hills,San Antonio,029,65,76,67,74,end of list
+973300,Select Rehabilitation Hospital-San Antonio,San Antonio,029,174,161,140,169,end of list
+973530,Nix Behavioral Health Center,San Antonio,029,788,657,590,,end of list
+973900,San Antonio Behavioral Healthcare Hospital,San Antonio,029,1391,1668,1715,1917,end of list
+973930,CHRISTUS Santa Rosa Hospital Alamo Heights,San Antonio,029,85,92,131,185,end of list
+974980,Legent Orthodpedic + Spine,San Antonio,029,213,293,322,357,end of list
+975155,Kindred Hospital San Antonio Central,San Antonio,029,81,102,114,122,end of list
+975179,Baptist Emergency Hospital Zarzamora,San Antonio,029,86,70,83,71,end of list
+975320,San Antonio AMG Specialty Hospital,San Antonio,029,37,51,,,end of list
+975364,Southcross Hospital San Antonio,San Antonio,029,,23,1,,end of list
+072000,CHI St Lukes Health Memorial San Augustine,San Augustine,419,57,49,56,62,end of list
+556000,Central Texas Medical Center,San Marcos,209,1163,994,1004,973,end of list
+974810,Wellbridge Hospital of San Marcos,San Marcos,209,121,132,134,135,end of list
+973120,Baptist Emergency Hospital Schertz,Schertz,187,67,54,58,43,end of list
+155000,Guadalupe Regional Medical Center,Seguin,187,1094,1046,945,1059,end of list
+113000,Memorial Hospital,Seminole,165,353,377,339,252,end of list
+546000,Seymour Hospital,Seymour,023,125,84,81,75,end of list
+571000,Shamrock General Hospital,Shamrock,483,10,2,17,20,end of list
+795000,Nexus Specialty Hospital Shenandoah Campus,Shenandoah,339,72,76,73,67,end of list
+873700,Encompass Health Rehab Hospital Vision Park,Shenandoah,339,356,370,400,372,end of list
+297000,Wilson N Jones Regional Medical Center,Sherman,181,1383,1442,1320,1366,end of list
+864600,Carrus Specialty Hospital,Sherman,181,115,146,105,108,end of list
+957000,Carrus Rehab Hospital,Sherman,005,178,164,172,172,end of list
+974910,Baylor Scott & White Surgical Hospital at Sherman,Sherman,181,130,131,153,174,end of list
+424500,Ascension Seton Smithville,Smithville,021,42,51,37,34,end of list
+439000,Cogdell Memorial Hospital,Snyder,415,230,207,177,205,end of list
+147000,Lillian M Hudspeth Memorial Hospital,Sonora,435,51,38,33,42,end of list
+812800,Texas Health Harris Methodist Hospital Southlake,Southlake,439,253,205,241,270,end of list
+975153,Methodist Southlake Hospital,Southlake,439,63,80,107,114,end of list
+395000,Hansford County Hospital,Spearman,195,29,17,9,11,end of list
+975122,CHI St Lukes Health Springwoods Village,Spring,201,,2,11,28,end of list
+975157,Spring Excellence Surgical Hospital,Spring,201,12,7,12,,end of list
+975781,United Memorial Medical Center Spring Hospital,Spring,201,,,,1,end of list
+874000,Atrium Medical Center,Stafford,157,64,57,54,47,end of list
+388000,Martin County Hospital District,Stanton,317,34,28,46,38,end of list
+256000,Texas Health Harris Methodist Hospital-Stephenville,Stephenville,143,441,458,319,259,end of list
+230002,Hospital for Surgical Excellence of Oakbend Medical Center,Sugar Land,157,6,1,,,end of list
+609001,Memorial Hermann Sugar Land,Sugar Land,157,2576,2764,2712,2988,end of list
+790500,Memorial Hermann Surgical Hospital First Colony,Sugar Land,157,81,90,92,90,end of list
+792700,Kindred Hospital Sugar Land,Sugar Land,157,231,237,195,196,end of list
+823000,Houston Methodist Sugar Land Hospital,Sugar Land,157,4878,5113,4972,5034,end of list
+869700,St Lukes Sugar Land Hospital,Sugar Land,157,1284,1367,1449,1390,end of list
+969000,Encompass Health Rehab Hospital Sugar Land,Sugar Land,157,318,363,339,340,end of list
+975223,Memorial Hermann First Colony Hospital,Sugar Land,157,13,6,4,,end of list
+975325,Sugarland Rehab Hospital,Sugar Land,157,65,88,96,130,end of list
+975373,First Surgical Hospital Sugar Land,Sugar Land,157,,3,,,end of list
+975411,St Michaels Elite Hospital,Sugar Land,157,,,,1,end of list
+975159,Christus Mother Frances Hospital Sulphur Springs,Sulphur Springs,223,900,917,870,978,end of list
+919000,Baylor Scott & White Medical Center Sunnyvale,Sunnyvale,113,1126,1154,1112,1101,end of list
+178000,Sweeny Community Hospital,Sweeny,039,68,58,44,43,end of list
+471000,Rolling Plains Memorial Hospital,Sweetwater,353,304,277,289,262,end of list
+192000,Lynn County Hospital District,Tahoka,305,33,10,15,13,end of list
+044000,Baylor Scott & White Medical Center Taylor,Taylor,491,118,91,95,91,end of list
+537000,Baylor Scott & White Medical Center Temple,Temple,027,8007,8123,8266,7817,end of list
+537006,Baylor Scott & White McLane Childrens Medical Center,Temple,027,949,832,637,849,end of list
+850300,Baylor Scott & White Continuing Care Hospital,Temple,027,113,123,131,151,end of list
+975390,Everest Rehabilitation Hospital Temple,Temple,027,,,1,67,end of list
+000111,Terrell State Hospital,Terrell,257,359,327,306,300,end of list
+144000,Wadley Regional Medical Center,Texarkana,037,1703,1738,1779,1698,end of list
+684000,Encompass Health Rehab Hospital Texarkana,Texarkana,037,319,320,298,294,end of list
+713001,CHRISTUS St Michael Rehab Hospital,Texarkana,037,194,248,224,202,end of list
+788001,CHRISTUS St Michael Health System,Texarkana,037,3748,3678,3658,3676,end of list
+974350,PAM Specialty Hospital of Texarkana North,Texarkana,037,53,53,58,76,end of list
+793000,HCA Houston Healthcare Mainland,Texas City,167,1666,1611,1711,1606,end of list
+975240,The Colony ER Hospital,The Colony,121,2,7,2,2,end of list
+615000,Memorial Hermann The Woodlands Medical Center,The Woodlands,339,5701,5795,5929,6246,end of list
+793100,St Lukes The Woodlands Hospital,The Woodlands,339,3164,3289,3395,3459,end of list
+795001,Nexus Specialty Hospital,The Woodlands,339,20,17,14,11,end of list
+923000,St Lukes Lakeside Hospital,The Woodlands,339,214,221,177,209,end of list
+974150,Woodlands Specialty Hospital,The Woodlands,339,4,16,13,5,end of list
+975205,Texas Childrens Hospital The Woodlands,The Woodlands,339,734,761,730,1026,end of list
+975208,Houston Methodist The Woodlands Hospital,The Woodlands,339,2582,2768,3272,3563,end of list
+428000,Throckmorton County Memorial Hospital,Throckmorton,447,15,18,20,16,end of list
+076000,HCA Houston Healthcare Tomball,Tomball,201,2248,2790,2785,2796,end of list
+792601,Kindred Hospital Tomball,Tomball,201,100,124,119,101,end of list
+975224,Memorial Hermann Tomball Hospital,Tomball,201,34,27,15,,end of list
+805100,Baylor Medical Center Trophy Club,Trophy Club,121,215,284,303,438,end of list
+273000,Swisher Memorial Hospital,Tulia,437,38,29,23,39,end of list
+000112,UT Health Center-Tyler,Tyler,423,192,152,160,169,end of list
+286000,Christus Mother Frances Hospital Tyler,Tyler,423,6997,6904,7055,7104,end of list
+692000,CHRISTUS Trinity Mother Frances Rehab Hospital,Tyler,423,570,548,508,504,end of list
+790200,Baylor Scott & White Texas Spine & Joint Hospital,Tyler,423,520,573,566,591,end of list
+806500,Tyler Continue Care Hospital,Tyler,423,129,138,124,120,end of list
+975202,CHRISTUS Mother Frances Hospital-South Tyler,Tyler,423,8,2,5,5,end of list
+975299,UT Health East Texas Tyler Regional Hospital,Tyler,423,5550,5829,5770,5555,end of list
+975301,UT Health East Texas Rehabilitation Hospital,Tyler,423,207,222,253,223,end of list
+975302,UT Health East Texas Long Term Acute Care,Tyler,423,104,78,73,59,end of list
+063000,Uvalde Memorial Hospital,Uvalde,463,272,330,335,339,end of list
+139000,Culberson Hospital,Van Horn,109,46,30,28,32,end of list
+000113,North Texas State Hospital-Vernon,Vernon,487,194,187,99,121,end of list
+084000,Wilbarger General Hospital,Vernon,487,159,156,179,159,end of list
+064000,Citizens Medical Center,Victoria,469,1878,1899,1992,2002,end of list
+453000,DeTar Hospital-Navarro,Victoria,469,1650,1539,1460,1440,end of list
+453001,DeTar Hospital-North,Victoria,469,675,652,790,748,end of list
+848100,PAM Specialty Hospital of Victoria North,Victoria,469,92,112,85,57,end of list
+973320,PAM Specialty Hospital of Victoria South,Victoria,469,76,79,78,84,end of list
+973450,PAM Rehab Hospital of Victoria,Victoria,469,193,201,200,192,end of list
+975406,PAM Specialty Hospital of Victoria Southeast,Victoria,469,,,,16,end of list
+000117,Waco Center for Youth,Waco,309,44,43,39,31,end of list
+040000,Ascension Providence,Waco,309,4281,4039,4120,4224,end of list
+506001,Baylor Scott & White Medical Center Hillcrest,Waco,309,3957,4022,3990,4203,end of list
+736000,Ascension Providence DePaul Center,Waco,309,283,312,305,266,end of list
+285000,Baylor Scott & White Medical Center Waxahachie,Waxahachie,139,2062,2028,2232,2127,end of list
+975000,Weatherford Rehabilitation Hospital,Weatherford,367,114,110,113,126,end of list
+975241,Medical City Weatherford,Weatherford,367,1437,1462,1540,1621,end of list
+212000,HCA Houston Healthcare Clear Lake,Webster,201,6296,6470,6779,7007,end of list
+680000,Kindred Rehab Hospital Clear Lake,Webster,201,203,212,,,end of list
+698004,Cornerstone Specialty Hospitals Clear Lake,Webster,201,125,135,129,123,end of list
+720402,Kindred Hospital Clear Lake,Webster,201,177,195,206,190,end of list
+822001,Houston Physicians Hospital,Webster,201,160,174,226,239,end of list
+974530,PAM Rehabilitation Hospital of Clear Lake,Webster,201,270,283,311,297,end of list
+975354,UTMB Clear Lake Hospital,Webster,201,,1040,1338,1438,end of list
+975393,PAM Rehabilitation Hospital Clear Lake North Campus,Webster,201,,,138,189,end of list
+195000,Collingsworth General Hospital,Wellington,087,24,48,33,26,end of list
+480000,Knapp Medical Center,Weslaco,215,2379,2279,2484,2499,end of list
+974680,Weslaco Regional Rehab Hospital,Weslaco,215,160,149,126,147,end of list
+975291,Oakbend Medical Center Wharton Hospital Campus,Wharton,481,,5,3,6,end of list
+116000,Parkview Hospital,Wheeler,483,31,32,23,23,end of list
+000114,North Texas State Hospital,Wichita Falls,485,108,103,204,247,end of list
+417000,United Regional Health Care System,Wichita Falls,485,4371,3849,3872,4240,end of list
+681400,Kell West Regional Hospital,Wichita Falls,485,220,244,234,227,end of list
+685000,Encompass Health Rehab Hospital Wichita Falls,Wichita Falls,485,419,420,438,391,end of list
+709001,Red River Hospital,Wichita Falls,485,545,580,609,419,end of list
+973800,Promise Hospital of Wichita Falls,Wichita Falls,485,73,121,,,end of list
+975401,KPC Promise Hospital of Wichita Falls,Wichita Falls,485,,,87,66,end of list
+781400,Winnie Community Hospital,Winnie,071,66,76,103,37,end of list
+446001,Christus Mother Frances Hospital Winnsboro,Winnsboro,499,86,65,66,65,end of list
+151000,North Runnels Hospital,Winters,399,33,24,8,21,end of list
+569000,Tyler County Hospital,Woodville,457,89,73,43,56,end of list
+023000,Yoakum Community Hospital,Yoakum,285,162,133,140,156,end of list
+End of records,End of records,End of records,End of records,End of records,End of records,End of records,End of records,End of records
