@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH -J los_cost_plots               # Job name
-#SBATCH -o los_cost_plots.%j.o          # Name of stdout output file
-#SBATCH -e los_cost_plots.%j.e          # Name of stderr error file
+#SBATCH -J categorize_iprdf             # Job name
+#SBATCH -o categorize_iprdf.%j.o        # Name of stdout output file
+#SBATCH -e categorize_iprdf.%j.e        # Name of stderr error file
 #SBATCH -p corralextra                  # Queue (partition) name
 #SBATCH -N 2                            # Total nodes (must be 1 for serial)
 #SBATCH -n 5                            # Total mpi tasks (should be 1 for serial)
@@ -12,6 +12,9 @@
 #SBATCH --mail-user=emjavan@utexas.edu  # Email to send to
 
 # File run from inside DSHS_IP_RDF/code/
+
+# Create output dir if it doesn't exist
+mkdir -p "../../CATEGORIZED_PAT_FILES/"
 
 # Load module to run sinularity container
 #module load tacc-apptainer
@@ -27,8 +30,8 @@ date
 # Configure launcher
 EXECUTABLE=$TACC_LAUNCHER_DIR/init_launcher
 PRUN=$TACC_LAUNCHER_DIR/paramrun
-CONTROL_FILE=commands_run_sum_stats.txt
-export LAUNCHER_JOB_FILE=commands_run_sum_stats.txt
+CONTROL_FILE=commands_run_categorize_funs.txt
+export LAUNCHER_JOB_FILE=commands_run_categorize_funs.txt
 export LAUNCHER_WORKDIR=`pwd`
 export LAUNCHER_SCHED=interleaved
 

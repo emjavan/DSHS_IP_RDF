@@ -13,6 +13,9 @@
 
 # File run from inside DSHS_IP_RDF/code/
 
+# Create output dir if it doesn't exist
+mkdir -p "../../FILTERED_PAT_FILES/"
+
 # Book keeping statements
 pwd
 date
