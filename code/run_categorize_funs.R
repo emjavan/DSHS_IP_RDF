@@ -10,8 +10,6 @@
 
 # TO DO
 # Add testthat error checking for all functions
-# Finish documentation of the columns in produced files
-# update readme in parent dir and code
 
 # NOTES
 # 1. Working directory is DSHS_IP_RDF/code/
