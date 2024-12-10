@@ -44,6 +44,7 @@ if(parallel_env){
            MIN_YEAR, "-", MAX_YEAR, ".csv"
     )
   ic(agg_output_file_path)
+  
   # Patient grouped data together with disease categorized
   discat_output_file_path = 
     paste0(output_agg_dir, "IPRDF-categorized_", 
@@ -51,12 +52,13 @@ if(parallel_env){
            MIN_YEAR, "-", MAX_YEAR, ".csv"
     )
   ic(discat_output_file_path)
+  
   # full.names will join path to pattern when returning, so remove duplicate / from strings
   all_pat_data_list = 
-    list.files(path=input_cat_dir, pattern = "_categorized.csv$", full.names = TRUE) %>%
-    (\(paths) gsub("/+", "/", paths))() %>%
+    list.files(path = input_cat_dir, pattern = "_categorized.csv$", full.names = TRUE) %>%
+    (function(paths) gsub("/+", "/", paths))() %>%
     # Filter by year extracted from the file names
-    (\(files) Filter(function(file) {
+    (function(files) Filter(function(file) {
       year <- as.numeric(str_extract(file, "\\d{4}")) # Extract the year from the file name
       ic(year)
       MIN_YEAR = as.numeric(MIN_YEAR)
@@ -64,7 +66,6 @@ if(parallel_env){
       ic(MIN_YEAR); ic(MAX_YEAR)
       !is.na(year) && year >= MIN_YEAR && year <= MAX_YEAR # Check if year is within range
     }, files)) # Pass the files explicitly to Filter
-  
   ic(length(all_pat_data_list))
 }else{
   ##### LOCAL ENV INPUTS #####
