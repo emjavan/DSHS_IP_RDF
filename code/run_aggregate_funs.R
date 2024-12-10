@@ -43,13 +43,14 @@ if(parallel_env){
            TIME_RES,    "_",
            MIN_YEAR, "-", MAX_YEAR, ".csv"
     )
+  ic(agg_output_file_path)
   # Patient grouped data together with disease categorized
   discat_output_file_path = 
     paste0(output_agg_dir, "IPRDF-categorized_", 
            gsub("_", "-", DISEASE_CAT), "_", # turn underscore to hyphen for file name
            MIN_YEAR, "-", MAX_YEAR, ".csv"
     )
-  
+  ic(discat_output_file_path)
   # full.names will join path to pattern when returning, so remove duplicate / from strings
   all_pat_data_list = 
     list.files(path=input_cat_dir, pattern = "_categorized.csv$", full.names = TRUE) %>%
@@ -63,6 +64,8 @@ if(parallel_env){
       ic(MIN_YEAR); ic(MAX_YEAR)
       !is.na(year) && year >= MIN_YEAR && year <= MAX_YEAR # Check if year is within range
     }, files)) # Pass the files explicitly to Filter
+  
+  ic(length(all_pat_data_list))
 }else{
   ##### LOCAL ENV INPUTS #####
   input_cat_dir = output_discat_dir = output_agg_dir = "../synthetic_data/"
@@ -80,14 +83,16 @@ if(parallel_env){
            gsub("_", "-", GRP_VAR)   ,  "_", 
            TIME_RES, ".csv"
     )
+  ic(agg_output_file_path)
   # Patient grouped data together with disease categorized
   discat_output_file_path = 
     paste0(output_agg_dir, "IPRDF-categorized_", 
            gsub("_", "-", DISEASE_CAT), ".csv" # turn underscore to hyphen for file name
     )
-  
+  ic(discat_output_file_path)
   # Only one categorized synthetic file
   all_pat_data_list = paste0(input_cat_dir, "IP_RDF_synthetic_data_categorized.csv")
+  ic(all_pat_data_list)
 } # end if running locally or on LS6
 
 #//////////////////////////////////
@@ -100,7 +105,6 @@ disease_vect = str_split(DISEASE_CAT, pattern = "-", simplify = FALSE)[[1]]
 if(!file.exists(discat_output_file_path)){
   # Row bind all the categorized files 
   # This will be very large file, but appropriate for LS6
-  ic(length(all_pat_data_list))
   patient_data_icd10_cat = all_pat_data_list %>%
     # YEAR=NA for synthetic data
     lapply(function(file) {
@@ -121,19 +125,22 @@ if(!file.exists(discat_output_file_path)){
   write.csv(patient_data_icd10_cat, 
             discat_output_file_path,
             row.names=F)
+  message("New file written:", discat_output_file_path)
 }else{
   patient_data_icd10_cat = read_csv(discat_output_file_path)
+  message("Existing file opened:", discat_output_file_path)
 } # end if disease categorized file needs to be created
 
-#/////////////////////////////////
-#### AGGREGATE DATA BY INPUTS ####
-#/////////////////////////////////
-
-# pass patient_data_icd10_cat to
-# daily census function or admit function
-# save all daily to files in the aggregation folder
-# if weekly then aggregate to weekly and save to folder
-#  will be hard coding start of week instead of passing, use Farinaz's specifications
+#////////////////////////////////
+#### AGGREGATE DAILY SPATIAL ####
+#////////////////////////////////
+# What's going to happen...
+# 1. pass patient_data_icd10_cat to
+#    daily census function or admit function
+# 2. save all daily to files in the aggregation folder
+# 3. if weekly then aggregate to weekly and save to folder
+#    will be hard coding start of week instead of passing
+#    Sunday is week start Farinaz wanted
 
 # Output path for the daily file created, daily needed to aggregate to weekly
 agg_output_file_path_daily = gsub("WEEKLY", "DAILY", agg_output_file_path)
@@ -163,15 +170,37 @@ if(!file.exists(agg_output_file_path_daily)){
   write.csv(hosp_daily_timeseries,
             agg_output_file_path_daily, 
             row.names = F)
+  message("New file written:", agg_output_file_path_daily)
 }else{
   # If daily file exists open it 
   hosp_daily_timeseries = read_csv(agg_output_file_path_daily)
+  message("Existing file opened:", agg_output_file_path_daily)
 } # end if daily census file needs to be created
 
+
+#///////////////////////////
+#### WEEKLY AGGREGATION ####
+#///////////////////////////
+# Define start of week
+# This is written in case you want to add as commandline parameter
 day_of_week_start = toupper("sunday")
 ic(day_of_week_start)
 #day_of_week_start = "2020-04-05"
-if(TIME_RES == "WEEKLY"){  
+
+# Change date to day of week if that's what was passed
+if(grepl("^\\d{4}-\\d{2}-\\d{2}$", day_of_week_start)){
+  day_of_week_start = toupper(weekdays(as.Date(day_of_week_start)))
+}
+
+# Output path for the daily file created, daily needed to aggregate to weekly
+# append start day of week, e.g. WEEKLY-SUNDAY
+agg_output_file_path_weekly = 
+  gsub("WEEKLY",
+       paste0("WEEKLY-", day_of_week_start), 
+       agg_output_file_path)
+
+# If input it weekly and file not yet made
+if(TIME_RES == "WEEKLY" & !file.exists(agg_output_file_path_weekly)){  
   # aggregate hosp_daily_timeseries to weekly
   hosp_weekly_timeseries = 
     group_daily_to_weekly(
@@ -181,23 +210,14 @@ if(TIME_RES == "WEEKLY"){
       week_start   = day_of_week_start, # can be day or YEAR-MM-DD format
       count_type   = COUNT_TYPE
     )
-  
-  # Change date to day of week if that's what was passed
-  if(grepl("^\\d{4}-\\d{2}-\\d{2}$", day_of_week_start)){
-    day_of_week_start = toupper(weekdays(as.Date(day_of_week_start)))
-  }
-  
-  # Output path for the daily file created, daily needed to aggregate to weekly
-  # append start day of week, e.g. WEEKLY-SUNDAY
-  agg_output_file_path_weekly = 
-    gsub("WEEKLY",
-         paste0("WEEKLY-", day_of_week_start), 
-         agg_output_file_path)
-  
+  # Save weekly to file
   write.csv(
     hosp_weekly_timeseries,
     agg_output_file_path_weekly,
     row.names=F
   )
+  message("New file written:", agg_output_file_path_weekly)
+}else{
+  message("File already exists:", agg_output_file_path_weekly)
 } # end if time series aggregated to weekly from daily
 
