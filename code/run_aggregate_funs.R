@@ -1,5 +1,11 @@
-
-# 
+#///////////////////////////////////////////////////////////////////////////
+#' Aggregate patient data that has already had ICD-10-CM codes categorized
+#' Patient data can spatially aggregate from Census Block Group to County 
+#'  and ZCTA to City. 
+#' Temporally can be aggregated from daily to weekly. Weekly depends on the
+#'  daily file, so it will be created if it doesn't exist.
+#' Emily Javan - ATX - 2024-12-10
+#///////////////////////////////////////////////////////////////////////////
 
 #///////////////////////////////////
 #### LOAD PACKAGES & FUNCTIONS ####
@@ -25,8 +31,8 @@ if(parallel_env){
   COUNT_TYPE  = as.character(args[2]) # Patient count in hospital type, only HOSP_ADMIT or HOSP_CENSUS
   GRP_VAR     = as.character(args[3]) # Spatial resolution grouping variable, PAT_CITY, HOSP_COUNTY, etc.
   TIME_RES    = as.character(args[4]) # Temporal resolution, only DAILY or WEEKLY
-  MIN_YEAR    = as.character(args[5]) # 4 digit year to start the timeseries file
-  MAX_YEAR    = as.character(args[6])# 4 digit year to end the timeseries file
+  MIN_YEAR    = as.character(args[5]) # 4 digit year to start the time series file
+  MAX_YEAR    = as.character(args[6]) # 4 digit year to end the time series file
   
   # Aggregated data output file path
   agg_output_file_path = 
@@ -50,7 +56,11 @@ if(parallel_env){
     (\(paths) gsub("/+", "/", paths))() %>%
     # Filter by year extracted from the file names
     (\(files) Filter(function(file) {
-      year <- str_extract(file, "\\d{4}") # Extract the year from the file name
+      year <- as.numeric(str_extract(file, "\\d{4}")) # Extract the year from the file name
+      ic(year)
+      MIN_YEAR = as.numeric(MIN_YEAR)
+      MAX_YEAR = as.numeric(MAX_YEAR)
+      ic(MIN_YEAR); ic(MAX_YEAR)
       !is.na(year) && year >= MIN_YEAR && year <= MAX_YEAR # Check if year is within range
     }, files)) # Pass the files explicitly to Filter
 }else{
