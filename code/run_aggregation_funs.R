@@ -17,7 +17,6 @@ source("categorize_aggregate_funs.R")
 parallel_env = TRUE
 if(parallel_env){
   ##### PARALLEL ENV INPUTS #####
-  input_filtered_dir = "../../FILTERED_PAT_FILES/"
   input_cat_dir      = "../../CATEGORIZED_PAT_FILES/"
   output_discat_dir  = "../../PAT_CATEGORIZED_BY_DISEASE/"
   output_agg_dir     = "../../AGGREGATED_PAT_FILES/"
@@ -47,7 +46,7 @@ if(parallel_env){
   
   # full.names will join path to pattern when returning, so remove duplicate / from strings
   all_pat_data_list = 
-    list.files(path=input_filtered_dir, pattern = "_categorized.csv$", full.names = TRUE) %>%
+    list.files(path=input_cat_dir, pattern = "_categorized.csv$", full.names = TRUE) %>%
     (\(paths) gsub("/+", "/", paths))() %>%
     # Filter by year extracted from the file names
     (\(files) Filter(function(file) {
@@ -56,7 +55,7 @@ if(parallel_env){
     }, files)) # Pass the files explicitly to Filter
 }else{
   ##### LOCAL ENV INPUTS #####
-  input_filtered_dir = input_cat_dir = output_discat_dir = output_agg_dir = "../synthetic_data/"
+  input_cat_dir = output_discat_dir = output_agg_dir = "../synthetic_data/"
   DISEASE_CAT = "FLU"        # Disease category, i.e. FLU-ILI-RSV, FLU, COV, etc.
   COUNT_TYPE  = "HOSP_ADMIT" # Patient count in hospital type, only HOSP_ADMIT or HOSP_CENSUS
   GRP_VAR     = "PAT_COUNTY"  # Spatial resolution grouping variable, PAT_CITY, HOSP_COUNTY, etc.
@@ -78,7 +77,7 @@ if(parallel_env){
     )
   
   # Only one categorized synthetic file
-  all_pat_data_list = paste0(input_filtered_dir, "IP_RDF_synthetic_data_categorized.csv")
+  all_pat_data_list = paste0(input_cat_dir, "IP_RDF_synthetic_data_categorized.csv")
 } # end if running locally or on LS6
 
 #//////////////////////////////////
@@ -91,6 +90,7 @@ disease_vect = str_split(DISEASE_CAT, pattern = "-", simplify = FALSE)[[1]]
 if(!file.exists(discat_output_file_path)){
   # Row bind all the categorized files 
   # This will be very large file, but appropriate for LS6
+  ic(length(all_pat_data_list))
   patient_data_icd10_cat = all_pat_data_list %>%
     # YEAR=NA for synthetic data
     lapply(function(file) {
@@ -121,7 +121,6 @@ if(!file.exists(discat_output_file_path)){
 
 # pass patient_data_icd10_cat to
 # daily census function or admit function
-#  admit function needs to be re-written to be generic
 # save all daily to files in the aggregation folder
 # if weekly then aggregate to weekly and save to folder
 #  will be hard coding start of week instead of passing, use Farinaz's specifications
@@ -159,7 +158,7 @@ if(!file.exists(agg_output_file_path_daily)){
   hosp_daily_timeseries = read_csv(agg_output_file_path_daily)
 } # end if daily census file needs to be created
 
-day_of_week_start = toupper("monday")
+day_of_week_start = toupper("sunday")
 ic(day_of_week_start)
 #day_of_week_start = "2020-04-05"
 if(TIME_RES == "WEEKLY"){  
