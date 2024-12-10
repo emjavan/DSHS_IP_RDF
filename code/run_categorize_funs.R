@@ -22,7 +22,7 @@
 #///////////////////////////
 #### FILTER IP RDF DATA ####
 #///////////////////////////
-parallel_env = FALSE # set to true if running on LS6
+parallel_env = TRUE # set to true if running on LS6
 filter_data = TRUE # set to true if using original PUDF files from DSHS
 icd10_csv_file = "../input_data/icd10_disease_category_list.csv"
 if(filter_data==TRUE & parallel_env == FALSE){

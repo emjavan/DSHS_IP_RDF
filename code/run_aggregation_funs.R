@@ -13,8 +13,8 @@ source("categorize_aggregate_funs.R")
 #//////////////////////////////////
 #### DEFINE INPUT ARGS & PATHS ####
 #//////////////////////////////////
-# Allocatino for parallel computing on Lonestar6 
-parallel_env = FALSE
+# Allocation for parallel computing on Lonestar6 
+parallel_env = TRUE
 if(parallel_env){
   ##### PARALLEL ENV INPUTS #####
   input_filtered_dir = "../../FILTERED_PAT_FILES/"
