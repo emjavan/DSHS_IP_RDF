@@ -1,5 +1,8 @@
 .DS_Store
 
+produced_data/
+figures/
+
 # docker/sigularity container too big for github
 code/r_tidycensus_jags_geo.sif
 
