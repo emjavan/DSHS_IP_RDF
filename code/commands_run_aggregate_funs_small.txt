@@ -1,0 +1,8 @@
+Rscript run_aggregate_funs.R FLU HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022
+Rscript run_aggregate_funs.R FLU HOSP_ADMIT PAT_CITY WEEKLY 2018 2022
+Rscript run_aggregate_funs.R FLU HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022
+Rscript run_aggregate_funs.R FLU HOSP_CENSUS PAT_CITY WEEKLY 2018 2022
+Rscript run_aggregate_funs.R FLU HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022
+Rscript run_aggregate_funs.R FLU HOSP_ADMIT PAT_COUNTY WEEKLY 2018 2022
+Rscript run_aggregate_funs.R FLU HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022
+Rscript run_aggregate_funs.R FLU HOSP_CENSUS PAT_COUNTY WEEKLY 2018 2022
