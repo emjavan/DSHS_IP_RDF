@@ -178,12 +178,11 @@ if(!file.exists(agg_output_file_path_daily)){
   message("Existing file opened:", agg_output_file_path_daily)
 } # end if daily census file needs to be created
 
-
 #///////////////////////////
 #### WEEKLY AGGREGATION ####
 #///////////////////////////
 # Define start of week
-# This is written in case you want to add as commandline parameter
+# This is written in case you want to add as command line parameter
 day_of_week_start = toupper("sunday")
 ic(day_of_week_start)
 #day_of_week_start = "2020-04-05"
@@ -191,7 +190,7 @@ ic(day_of_week_start)
 # Change date to day of week if that's what was passed
 if(grepl("^\\d{4}-\\d{2}-\\d{2}$", day_of_week_start)){
   day_of_week_start = toupper(weekdays(as.Date(day_of_week_start)))
-}
+} # end if 
 
 # Output path for the daily file created, daily needed to aggregate to weekly
 # append start day of week, e.g. WEEKLY-SUNDAY

@@ -365,7 +365,7 @@ count_hospital_admits_daily = function(
   # Convert time series to count of patients in hospital on day by spatial resolution
   hospital_admit_count <- patient_data %>%
     mutate(
-      ADMIT_START_OF_CARE = ymd(ADMIT_START_OF_CARE)
+      ADMIT_START_OF_CARE = lubridate::ymd(ADMIT_START_OF_CARE)
     ) %>%
     # Group by each date and count the number of patients
     group_by(across(all_of(group_vars)), ADMIT_START_OF_CARE) %>%
@@ -409,8 +409,8 @@ count_hospital_census_daily = function(
   # Convert time series to count of patients in hospital on day by spatial resolution
   hospital_census_count <- patient_data %>%
     mutate(
-      ADMIT_START_OF_CARE = ymd(ADMIT_START_OF_CARE),
-      STMT_PERIOD_THRU = ymd(STMT_PERIOD_THRU)
+      ADMIT_START_OF_CARE = lubridate::ymd(ADMIT_START_OF_CARE),
+      STMT_PERIOD_THRU = lubridate::ymd(STMT_PERIOD_THRU)
     ) %>%
     # Create a sequence of dates for each patient
     rowwise() %>%
@@ -451,7 +451,7 @@ group_daily_to_weekly <- function(
   # YEAR-MM-DD format expected
   if (grepl("^\\d{4}-\\d{2}-\\d{2}$", week_start)) {
     # Specific date provided, use it as the start of the week
-    start_date   = ymd(week_start)
+    start_date   = lubridate::ymd(week_start)
   } else if (week_start %in% days_of_week) {
     # Sunday = 1, ... Saturday = 7
     week_start_num <- match(week_start, days_of_week)

@@ -16,6 +16,7 @@ if (!require("pacman"))
 pacman::p_load(tidyverse,
                icecream,
                testthat,
-               readxl
+               readxl,
+               lubridate
                )
 
