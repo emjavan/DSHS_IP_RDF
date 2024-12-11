@@ -47,7 +47,7 @@ if(parallel_env){
   
   # Patient grouped data together with disease categorized
   discat_output_file_path = 
-    paste0(output_agg_dir, "IPRDF-categorized_", 
+    paste0(output_discat_dir, "IPRDF-categorized_", 
            gsub("_", "-", DISEASE_CAT), "_", # turn underscore to hyphen for file name
            MIN_YEAR, "-", MAX_YEAR, ".csv"
     )
@@ -85,12 +85,14 @@ if(parallel_env){
            TIME_RES, ".csv"
     )
   ic(agg_output_file_path)
+  
   # Patient grouped data together with disease categorized
   discat_output_file_path = 
-    paste0(output_agg_dir, "IPRDF-categorized_", 
+    paste0(output_discat_dir, "IPRDF-categorized_", 
            gsub("_", "-", DISEASE_CAT), ".csv" # turn underscore to hyphen for file name
     )
   ic(discat_output_file_path)
+  
   # Only one categorized synthetic file
   all_pat_data_list = paste0(input_cat_dir, "IP_RDF_synthetic_data_categorized.csv")
   ic(all_pat_data_list)
