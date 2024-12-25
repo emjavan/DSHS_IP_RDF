@@ -434,7 +434,8 @@ group_daily_to_weekly <- function(
     date_col         = "DATE", 
     grouping_var     = "PAT_COUNTY", # spatial geo to group by, could be HOSP_COUNTY, PAT_CITY etc.
     optional_grp_var = NULL, # pass if age needed, but should come from command line "PAT_AGE_GRP"
-    week_start       = "SUNDAY", # can be day or YEAR-MM-DD format
+    week_day         = "SUNDAY", # can be day or YEAR-MM-DD format
+    week_start       = T, # if F, then will make day end of week
     count_type       = "HOSP_ADMIT" # Or HOSP_CENSUS
     ) {
   # Convert date column to Date if not already
@@ -442,29 +443,36 @@ group_daily_to_weekly <- function(
     mutate(across(all_of(date_col), as.Date))
   
   # ensure day inputs match
-  week_start   = toupper(week_start)
+  week_day     = toupper(week_day)
   start_date   = as.Date("2020-04-05") # Start with a known Sunday
   # "MONDAY"    "TUESDAY"   "WEDNESDAY" "THURSDAY"  "FRIDAY"    "SATURDAY"  "SUNDAY"
   days_of_week = toupper(weekdays(seq.Date(start_date, start_date + 6, by = "day")))
   
   # Define the start of the week
   # YEAR-MM-DD format expected
-  if (grepl("^\\d{4}-\\d{2}-\\d{2}$", week_start)) {
+  if (grepl("^\\d{4}-\\d{2}-\\d{2}$", week_day)) {
     # Specific date provided, use it as the start of the week
-    start_date   = lubridate::ymd(week_start)
-  } else if (week_start %in% days_of_week) {
+    start_date   = lubridate::ymd(week_day)
+  } else if (week_day %in% days_of_week) {
     # Sunday = 1, ... Saturday = 7
-    week_start_num <- match(week_start, days_of_week)
-    start_date <- start_date + week_start_num - 1
+    week_day_num <- match(week_day, days_of_week)
+    start_date <- start_date + week_day_num - 1
   } else {
-    stop("Invalid week_start format. Use a specific date ('YYYY-MM-DD') or a day of the week.")
+    stop("Invalid week_day format. Use a specific date ('YYYY-MM-DD') or a day of the week.")
   } # end if taking in a specific date or a string
   
   # Add WEEK column to data frame for grouping
-  patient_data <- patient_data %>%
-    mutate(
-      WEEK = start_date + 7 * floor(as.numeric(difftime(.data[[date_col]], start_date, units = "days")) / 7)
-    )
+  if (week_start) { # week_start = TRUE (week starts with the specified day)
+    patient_data <- patient_data %>%
+      mutate(
+        WEEK = start_date + 7 * floor(as.numeric(difftime(.data[[date_col]], start_date, units = "days")) / 7)
+      )
+  } else { # week_start = FALSE (week ends with the specified day)
+    patient_data <- patient_data %>%
+      mutate(
+        WEEK = start_date + 7 * floor(as.numeric(difftime(.data[[date_col]], start_date - 6, units = "days")) / 7)
+      )
+  } # end if week starts or ends with the day of week selected 
   
   # Dynamically find columns that start with grouping_var
   # e.g. group_by both PAT_COUNTY and PAT_COUNTY_FIPS

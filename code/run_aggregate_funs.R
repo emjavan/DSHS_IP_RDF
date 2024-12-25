@@ -70,9 +70,9 @@ if(parallel_env){
 }else{
   ##### LOCAL ENV INPUTS #####
   input_cat_dir = output_discat_dir = output_agg_dir = "../synthetic_data/"
-  DISEASE_CAT = "FLU"        # Disease category, i.e. FLU-ILI-RSV, FLU, COV, etc.
+  DISEASE_CAT = "FLU-ILI-RSV"        # Disease category, i.e. FLU-ILI-RSV, FLU, COV, etc.
   COUNT_TYPE  = "HOSP_ADMIT" # Patient count in hospital type, only HOSP_ADMIT or HOSP_CENSUS
-  GRP_VAR     = "PAT_COUNTY"  # Spatial resolution grouping variable, PAT_CITY, HOSP_COUNTY, etc.
+  GRP_VAR     = "PAT_ZCTA"  # Spatial resolution grouping variable, PAT_CITY, HOSP_COUNTY, etc.
   TIME_RES    = "WEEKLY"      # Temporal resolution, only DAILY or WEEKLY
   # no date range for synthetic data
   
@@ -185,41 +185,65 @@ if(!file.exists(agg_output_file_path_daily)){
 #///////////////////////////
 # Define start of week
 # This is written in case you want to add as command line parameter
-day_of_week_start = toupper("sunday")
-ic(day_of_week_start)
-#day_of_week_start = "2020-04-05"
+day_of_week = toupper("sunday")
+ic(day_of_week)
+#day_of_week = "2020-04-05"
 
 # Change date to day of week if that's what was passed
-if(grepl("^\\d{4}-\\d{2}-\\d{2}$", day_of_week_start)){
-  day_of_week_start = toupper(weekdays(as.Date(day_of_week_start)))
+if(grepl("^\\d{4}-\\d{2}-\\d{2}$", day_of_week)){
+  day_of_week = toupper(weekdays(as.Date(day_of_week)))
 } # end if 
 
 # Output path for the daily file created, daily needed to aggregate to weekly
-# append start day of week, e.g. WEEKLY-SUNDAY
-agg_output_file_path_weekly = 
+# append start day of week, e.g. WEEKLY-SUNDAY-START
+agg_output_file_path_weekly_start = 
   gsub("WEEKLY",
-       paste0("WEEKLY-", day_of_week_start), 
+       paste0("WEEKLY-", day_of_week, "-START"), 
+       agg_output_file_path)
+# append end day of week, e.g. WEEKLY-SUNDAY-END
+agg_output_file_path_weekly_end = 
+  gsub("WEEKLY",
+       paste0("WEEKLY-", day_of_week, "-END"), 
        agg_output_file_path)
 
 # If input it weekly and file not yet made
-if(TIME_RES == "WEEKLY" & !file.exists(agg_output_file_path_weekly)){  
-  # aggregate hosp_daily_timeseries to weekly
-  hosp_weekly_timeseries = 
+if(TIME_RES == "WEEKLY" & !file.exists(agg_output_file_path_weekly_start)){  
+  # aggregate hosp_daily_timeseries to weekly day starting the week
+  hosp_weekly_timeseries_start = 
     group_daily_to_weekly(
       hosp_daily_timeseries, # data frame of patient data
       date_col     = "DATE", 
       grouping_var = GRP_VAR, # spatial geo to group by, could be HOSP_COUNTY, PAT_CITY etc.
-      week_start   = day_of_week_start, # can be day or YEAR-MM-DD format
+      week_day     = day_of_week, # can be day or YEAR-MM-DD format
+      week_start   = T, # if F, then will make day end of week
       count_type   = COUNT_TYPE
     )
   # Save weekly to file
   write.csv(
-    hosp_weekly_timeseries,
-    agg_output_file_path_weekly,
+    hosp_weekly_timeseries_start,
+    agg_output_file_path_weekly_start,
     row.names=F
   )
-  message("New file written:", agg_output_file_path_weekly)
+  message("New file written:", agg_output_file_path_weekly_start)
+  
+  # aggregate hosp_daily_timeseries to weekly day ending week
+  hosp_weekly_timeseries_end = 
+    group_daily_to_weekly(
+      hosp_daily_timeseries, # data frame of patient data
+      date_col     = "DATE", 
+      grouping_var = GRP_VAR, # spatial geo to group by, could be HOSP_COUNTY, PAT_CITY etc.
+      week_day     = day_of_week, # can be day or YEAR-MM-DD format
+      week_start   = F, # if F, then will make day end of week
+      count_type   = COUNT_TYPE
+    )
+  # Save weekly to file
+  write.csv(
+    hosp_weekly_timeseries_end,
+    agg_output_file_path_weekly_end,
+    row.names=F
+  )
+  message("New file written:", agg_output_file_path_weekly_end)
 }else{
-  message("File already exists:", agg_output_file_path_weekly)
+  message("File already exists:", agg_output_file_path_weekly_start)
 } # end if time series aggregated to weekly from daily
 
