@@ -24,17 +24,18 @@ all_disease_comb <- lapply(1:length(diseases), function(k) {
 count_type = c("HOSP_ADMIT", "HOSP_CENSUS")
 
 # All the possible spatial resolutions
+# The PAT_*** from census blocks are only 3 char, not 15, so those do not work yet
 spatial_resolution = c(
   "THCIC_ID",               # HOSPITAL level time series
   #"PAT_CENSUS_BLOCKGROUP", # doubt we'd have the patient count needed to publish this resolution
   "HOSP_CITY",              # HOSPITALS within a CITY
   "PAT_CITY",               # PATIENTS mailing address within a CITY
-  "PAT_CENSUS_TRACT",       # PATIENTS mailing address within a CENSUS TRACT
+  #"PAT_CENSUS_TRACT",      # PATIENTS mailing address within a CENSUS TRACT
   "HOSP_COUNTY",            # HOSPITALS within a County
-  "PAT_COUNTY",             # PATIENTS mailing address within a County, will include PAT_COUNTY_FIPS as col
+  #"PAT_COUNTY",            # PATIENTS mailing address within a County, will include PAT_COUNTY_FIPS as col
   "PAT_ZCTA",               # PATIENTS mailing address within a ZCTA
-  "HOSP_STATE",             # Only state we have is TEXAS => All TEXAS hospitals reporting
-  "PAT_STATE"               # PATIENTS mailing address within TEXAS
+  "HOSP_STATE"              # Only state we have is TEXAS => All TEXAS hospitals reporting
+  #"PAT_STATE"              # PATIENTS mailing address within TEXAS
 )
 
 # Time series temporal resolution options
