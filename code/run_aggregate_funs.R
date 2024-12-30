@@ -71,7 +71,7 @@ if(parallel_env){
   ##### LOCAL ENV INPUTS #####
   input_cat_dir = output_discat_dir = output_agg_dir = "../synthetic_data/"
   DISEASE_CAT = "FLU-ILI-RSV"        # Disease category, i.e. FLU-ILI-RSV, FLU, COV, etc.
-  COUNT_TYPE  = "HOSP_ADMIT" # Patient count in hospital type, only HOSP_ADMIT or HOSP_CENSUS
+  COUNT_TYPE  = "HOSP_CENSUS" # Patient count in hospital type, only HOSP_ADMIT or HOSP_CENSUS
   GRP_VAR     = "PAT_ZCTA"  # Spatial resolution grouping variable, PAT_CITY, HOSP_COUNTY, etc.
   TIME_RES    = "WEEKLY"      # Temporal resolution, only DAILY or WEEKLY
   # no date range for synthetic data

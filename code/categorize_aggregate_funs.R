@@ -487,11 +487,17 @@ group_daily_to_weekly <- function(
   if(count_type == "HOSP_ADMIT"){
     weekly_data <- patient_data %>%
       group_by(across(all_of(group_vars)), WEEK) %>%
-      summarise(PATIENT_COUNT = sum(PATIENT_COUNT), .groups = "drop")
+      summarise(
+        DISEASE_CAT = first(DISEASE_CAT), 
+        COUNT_TYPE = first(COUNT_TYPE),
+        PATIENT_COUNT = sum(PATIENT_COUNT), 
+        .groups = "drop")
   }else{
     weekly_data <- patient_data %>%
       group_by(across(all_of(group_vars)), WEEK) %>%
       summarise(
+        DISEASE_CAT = first(DISEASE_CAT), 
+        COUNT_TYPE = first(COUNT_TYPE),
         PATIENT_COUNT_SUM    = sum(PATIENT_COUNT),
         COVERAGE_DAYS        = n(),
         PATIENT_COUNT_MEAN   = PATIENT_COUNT_SUM/COVERAGE_DAYS,
