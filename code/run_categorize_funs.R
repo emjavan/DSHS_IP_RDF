@@ -21,7 +21,7 @@
 #### FILTER IP RDF DATA ####
 #///////////////////////////
 parallel_env = FALSE # set to true if running on LS6
-filter_data = TRUE # set to true if using original PUDF files from DSHS
+filter_data = FALSE # set to true if using original PUDF files from DSHS
 icd10_csv_file = "../input_data/icd10_disease_category_list.csv"
 if(filter_data==TRUE & parallel_env == FALSE){
   bash_script <- c(
@@ -54,18 +54,17 @@ source("categorize_aggregate_funs.R")
 # On LS6 take in file path from command line: ../../FILTERED_PAT_FILES/out.IP_*_filtered.txt
 # *_filtered.txt files created with filter_icd10_codes.sh
 if(parallel_env){
-  args                = commandArgs(TRUE)
-  pat_data_path       = as.character(args[1]) 
-  re_make_cat_files   = as.logical(args[2])
+  args               = commandArgs(TRUE)
+  pat_data_path      = as.character(args[1]) 
+  re_make_cat_files  = as.logical(args[2])
   
   # Put categorized files in the categorized folder
   # Folder created in bash script to launch job
   output_path_prefix = gsub("_filtered.txt", "", pat_data_path)
   output_path_prefix = gsub("FILTERED", "CATEGORIZED", output_path_prefix)
-
 }else{
-  pat_data_path       = "../synthetic_data/IP_RDF_synthetic_data_filtered.txt"
-  re_make_cat_files   = TRUE # synthetic files get re-categorized to ensure it's working
+  pat_data_path      = "../synthetic_data/IP_RDF_synthetic_data_filtered.txt"
+  re_make_cat_files  = TRUE # synthetic files get re-categorized to ensure it's working
   
   # output folder doesn't change for synthetic data
   output_path_prefix = gsub("_filtered.txt", "", pat_data_path)
@@ -79,7 +78,6 @@ patient_data = read_delim(pat_data_path, delim = "\t", col_types = cols(.default
   mutate(across(everything(), ~ na_if(.x, "")), # convert blanks to NAs
          across(c(PAT_AGE_DAYS, WARD_AMOUNT, ICU_AMOUNT), as.numeric)
          )
-
 
 # Data date doesn't exist for the synthetic data
 if(!(data_date=="")){

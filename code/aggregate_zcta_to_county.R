@@ -19,18 +19,21 @@ source("get_packages_used.R")
 # Crosswalk made in "hospital_catchment_estimation/code/create_thcic-id_to_ccn_crosswalk.R"
 #  can be found at https://github.com/emjavan/hospital_catchment_estimation/tree/main/code
 zcta_county_cross = read_csv("../input_data/US_ZCTA-CITY-COUNTY_pop_2018-2022_acs.csv") %>%
-  mutate(ZCTA=as.character(ZCTA))
+  mutate(
+    ZCTA = as.character(ZCTA),
+    STATE = gsub(" \\(PO BOXES\\)", "", STATE)
+  ) %>%
+  rename(PAT_ZCTA=ZCTA, PAT_COUNTY=COUNTY, PAT_COUNTY_FIPS=COUNTY_FIPS, PAT_STATE_STATE)
 
-parallel=TRUE
+parallel=FALSE
 if(parallel){
   input_dir_path  = "../../AGGREGATED_PAT_FILES"
   output_dir_path = "../../AGGREGATED_BY_CROSSWALK_PAT_FILES"
-  if(!dir.exists(output_dir_path)){
-    dir.create(output_dir_path)
-  } # make output dir if needed
 }else{
-  input_dir_path  = output_dir_path = "../synthetic_data"
+  input_dir_path  = "../synthetic_data/AGGREGATED_PAT_FILES"
+  output_dir_path = "../synthetic_data/AGGREGATED_BY_CROSSWALK_PAT_FILES"
 } # end if opening real or synthetic data
+if(!dir.exists(output_dir_path)){dir.create(output_dir_path)} # make output dir if needed
 
 # List files matching the pattern
 file_pattern = "IPRDF-aggregated_.*_.*_PAT-ZCTA_.*\\.csv"
@@ -48,7 +51,7 @@ for(i in 1:length(agg_file_paths)){
   # Join ZCTA county crosswalk and aggregate to patients per county
   zcta_to_county_conv = read_csv(agg_file_paths[i]) %>%
     mutate(PAT_ZCTA=as.character(PAT_ZCTA)) %>%
-    left_join(zcta_county_cross, by=c("PAT_ZCTA"="ZCTA"))
+    left_join(zcta_county_cross, by="PAT_ZCTA")
   
   # Sum appropriate columns depending on count type and daily/weekly
   count_type = unique(zcta_to_county_conv$COUNT_TYPE)
@@ -57,7 +60,7 @@ for(i in 1:length(agg_file_paths)){
     # Weekly census files require more columns to aggregate 
     grpd_county_df = zcta_to_county_conv %>%
       # Daily files have DATE and weekly have WEEK column
-      group_by(DISEASE_CAT, COUNT_TYPE, COUNTY, COUNTY_FIPS, STATE, WEEK) %>%
+      group_by(WEEK, DISEASE_CAT, COUNT_TYPE, PAT_COUNTY, PAT_COUNTY_FIPS, PAT_STATE) %>%
       # Sum the weekly metrics for all ZCTA in a county
       summarise(
         across(PATIENT_COUNT_MEAN:PATIENT_COUNT_MAX, sum, .names = "{.col}_SUM"),
@@ -70,7 +73,8 @@ for(i in 1:length(agg_file_paths)){
       mutate(TOTAL_PATIENTS_TX = sum(PATIENT_COUNT) # keeping the sum for error checking at the end
       ) %>%
       # Daily files have DATE and weekly have WEEK column
-      group_by(across(any_of(c("DISEASE_CAT", "COUNT_TYPE", "COUNTY", "COUNTY_FIPS", "STATE", "DATE", "WEEK")))) %>%
+      group_by(across(any_of(c("DATE", "WEEK", "DISEASE_CAT", "COUNT_TYPE", 
+                               "PAT_COUNTY", "PAT_COUNTY_FIPS", "PAT_STATE")))) %>%
       summarise(
         PATIENT_COUNT = sum(PATIENT_COUNT),
         TOTAL_PATIENTS_TX = first(TOTAL_PATIENTS_TX),

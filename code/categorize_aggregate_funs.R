@@ -261,7 +261,9 @@ process_patient_data <- function(
     left_join(read_csv("../input_data/US_ZCTA-CITY-COUNTY_pop_2018-2022_acs.csv"), 
               by=c("PAT_ZCTA"="ZCTA")) %>%
     separate(CITY_NAME, into=c("PAT_CITY", NA), sep=", ", extra="merge") %>%
-    dplyr::select(PAT_ZIP_5CHAR, PAT_ZCTA, PAT_CITY)
+    # Need to get state from city until we have correct PAT_CENSUS_BLOCKGROUP column in IPRDF
+    rename(PAT_STATE = STATE.x) %>%
+    dplyr::select(PAT_ZIP_5CHAR, PAT_ZCTA, PAT_CITY, PAT_STATE)
   
   # Categorize ICD-10s of patients and get all their features
   cleaned_pat_df =
@@ -310,14 +312,14 @@ process_patient_data <- function(
         PAT_AGE_YRS_FLOOR >= 50 & PAT_AGE_YRS_FLOOR <= 64 ~ "50-64",
         PAT_AGE_YRS_FLOOR >= 65                           ~ "65+",
         TRUE ~ NA_character_ # Catch any unmatched cases
-      ),
-      PAT_STATE_FIPS             = str_sub(PAT_ADDR_CENSUS_BLOCK, 1, 2),
-      PAT_COUNTY_FIPS            = str_sub(PAT_ADDR_CENSUS_BLOCK, 1, 5),
-      PAT_CENSUS_TRACT_FIPS      = str_sub(PAT_ADDR_CENSUS_BLOCK, 1, 11),
-      PAT_CENSUS_BLOCKGROUP_FIPS = str_sub(PAT_ADDR_CENSUS_BLOCK, 1, 12)
+      )#,
+      # PAT_STATE_FIPS             = str_sub(PAT_ADDR_CENSUS_BLOCK, 1, 2),
+      # PAT_COUNTY_FIPS            = str_sub(PAT_ADDR_CENSUS_BLOCK, 1, 5),
+      # PAT_CENSUS_TRACT_FIPS      = str_sub(PAT_ADDR_CENSUS_BLOCK, 1, 11),
+      # PAT_CENSUS_BLOCKGROUP_FIPS = str_sub(PAT_ADDR_CENSUS_BLOCK, 1, 12)
     ) %>%
     # Add county names, since people like to search those
-    left_join(county_name_crosswalk, by="PAT_COUNTY_FIPS") %>%
+    #left_join(county_name_crosswalk, by="PAT_COUNTY_FIPS") %>%
     dplyr::select(
       PRINC_DIAG_CODE, POA_PRINC_DIAG_CODE, PRIMARY_ADMIT_POA_Y,
       ends_with("_1"), ends_with("_2"), ends_with("_3"),
@@ -343,6 +345,11 @@ count_hospital_admits_daily = function(
   grouping_var = "PAT_COUNTY", # spatial geo to group by, could be HOSP_COUNTY, PAT_CITY etc.
   optional_grp_var = NULL # pass if age needed, but should come from command line "PAT_AGE_GRP"
   ){
+  # If using city name need state to make it unique
+  if(grouping_var == "PAT_CITY"){
+    optional_grp_var = c(optional_grp_var, "PAT_STATE")
+  }
+  
   # Check grouping variable in df
   if (!grouping_var %in% names(patient_data) || 
       (!is.null(optional_grp_var) && !optional_grp_var %in% names(patient_data))) {
@@ -354,7 +361,8 @@ count_hospital_admits_daily = function(
   } # end if grouping_var and optional_grp_var not in passed data frame
   
   # Dynamically find columns that start with grouping_var
-  # e.g. group_by both PAT_COUNTY and PAT_COUNTY_FIPS
+  # e.g. group_by both PAT_COUNTY and PAT_COUNTY_FIPS, FIPS required to be a unique grouping
+  #  Different states can have counties with the same names
   group_vars <- names(patient_data)[startsWith(names(patient_data), grouping_var)]
     
   # Add optional_grp_var if not NULL
@@ -387,6 +395,11 @@ count_hospital_census_daily = function(
     grouping_var = "PAT_COUNTY", # spatial geo to group by, could be HOSP_COUNTY, PAT_CITY etc.
     optional_grp_var = NULL # pass if age needed, but should come from command line "PAT_AGE_GRP"
     ){
+  # If using city name need state to make it unique
+  if(grouping_var == "PAT_CITY"){
+    optional_grp_var = c(optional_grp_var, "PAT_STATE")
+  }
+
   # Check grouping variable in df
   if (!grouping_var %in% names(patient_data) || 
       (!is.null(optional_grp_var) && !optional_grp_var %in% names(patient_data))) {

@@ -34,8 +34,8 @@ spatial_resolution = c(
   "HOSP_COUNTY",            # HOSPITALS within a County
   #"PAT_COUNTY",            # PATIENTS mailing address within a County, will include PAT_COUNTY_FIPS as col
   "PAT_ZCTA",               # PATIENTS mailing address within a ZCTA
-  "HOSP_STATE"              # Only state we have is TEXAS => All TEXAS hospitals reporting
-  #"PAT_STATE"              # PATIENTS mailing address within TEXAS
+  "HOSP_STATE",              # Only state we have is TEXAS => All TEXAS hospitals reporting
+  "PAT_STATE"              # PATIENTS mailing address within TEXAS
 )
 
 # Time series temporal resolution options
