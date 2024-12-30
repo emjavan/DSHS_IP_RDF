@@ -1,0 +1,555 @@
+/corral-secure/utexas/IBN24016/DSHS_IP_RDF/code
+Thu Dec 26 23:51:04 CST 2024
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    2
+   Working directory:  /corral-secure/utexas/IBN24016/DSHS_IP_RDF/code
+   Processes per host: 90
+   Total processes:    180
+   Total jobs:         180
+   Scheduling method:  interleaved
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+Launcher: Task 4 running job 5 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 3 running job 4 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 7 running job 8 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 21 running job 22 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 15 running job 16 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 9 running job 10 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 27 running job 28 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 53 running job 54 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 65 running job 66 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 71 running job 72 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 77 running job 78 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-RSV HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 81 running job 82 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-RSV HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 108 running job 109 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI-RSV HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 136 running job 137 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-RSV HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 152 running job 153 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI-RSV HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 158 running job 159 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI-RSV HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 8 running job 9 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 28 running job 29 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 30 running job 31 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 39 running job 40 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R RSV HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 48 running job 49 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 52 running job 53 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 66 running job 67 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 72 running job 73 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-RSV HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 78 running job 79 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-RSV HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 79 running job 80 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-RSV HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 88 running job 89 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 102 running job 103 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-RSV HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 95 running job 96 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 96 running job 97 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-RSV HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 115 running job 116 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI-RSV HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 116 running job 117 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI-RSV HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 128 running job 129 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 133 running job 134 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-RSV HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 146 running job 147 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI-RSV HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 154 running job 155 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI-RSV HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 151 running job 152 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI-RSV HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 164 running job 165 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI-RSV HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 166 running job 167 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI-RSV HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 177 running job 178 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI-RSV HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 178 running job 179 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI-RSV HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 175 running job 176 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI-RSV HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 0 running job 1 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 2 running job 3 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 11 running job 12 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 29 running job 30 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 36 running job 37 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R RSV HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 33 running job 34 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 32 running job 33 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 43 running job 44 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R RSV HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 46 running job 47 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R RSV HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 54 running job 55 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 62 running job 63 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 73 running job 74 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-RSV HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 86 running job 87 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 92 running job 93 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 97 running job 98 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-RSV HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 93 running job 94 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 112 running job 113 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI-RSV HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 122 running job 123 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 119 running job 120 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI-RSV HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 121 running job 122 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 129 running job 130 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 139 running job 140 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-RSV HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 140 running job 141 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-RSV HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 142 running job 143 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-RSV HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 179 running job 180 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI-RSV HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 16 running job 17 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 24 running job 25 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 26 running job 27 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 31 running job 32 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 41 running job 42 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R RSV HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 42 running job 43 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R RSV HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 56 running job 57 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 57 running job 58 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 59 running job 60 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 63 running job 64 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 87 running job 88 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 98 running job 99 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-RSV HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 104 running job 105 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-RSV HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 110 running job 111 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI-RSV HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 118 running job 119 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI-RSV HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 144 running job 145 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI-RSV HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 150 running job 151 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI-RSV HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 159 running job 160 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI-RSV HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 173 running job 174 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI-RSV HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 91 running job 92 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 124 running job 125 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 114 running job 115 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI-RSV HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 131 running job 132 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 130 running job 131 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 172 running job 173 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI-RSV HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 149 running job 150 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI-RSV HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 171 running job 172 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI-RSV HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 5 running job 6 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 19 running job 20 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 22 running job 23 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 55 running job 56 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 64 running job 65 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 76 running job 77 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-RSV HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 89 running job 90 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 82 running job 83 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-RSV HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 105 running job 106 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-RSV HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 101 running job 102 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-RSV HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 94 running job 95 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 113 running job 114 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI-RSV HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 138 running job 139 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-RSV HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 123 running job 124 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 141 running job 142 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-RSV HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 160 running job 161 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI-RSV HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 153 running job 154 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI-RSV HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 148 running job 149 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI-RSV HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 162 running job 163 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI-RSV HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 161 running job 162 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI-RSV HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 176 running job 177 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI-RSV HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 1 running job 2 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 35 running job 36 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 49 running job 50 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 40 running job 41 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R RSV HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 25 running job 26 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 38 running job 39 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R RSV HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 67 running job 68 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 60 running job 61 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 74 running job 75 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-RSV HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 83 running job 84 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-RSV HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 69 running job 70 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 85 running job 86 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 100 running job 101 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-RSV HOSP_ADMIT PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 126 running job 127 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 103 running job 104 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-RSV HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 99 running job 100 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-RSV HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 117 running job 118 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI-RSV HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 127 running job 128 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 143 running job 144 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-RSV HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 167 running job 168 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI-RSV HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 163 running job 164 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI-RSV HOSP_CENSUS HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 169 running job 170 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI-RSV HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 10 running job 11 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 109 running job 110 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI-RSV HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 18 running job 19 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 37 running job 38 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R RSV HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 61 running job 62 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 84 running job 85 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 6 running job 7 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 13 running job 14 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 17 running job 18 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 51 running job 52 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 12 running job 13 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 14 running job 15 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 34 running job 35 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 45 running job 46 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R RSV HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 44 running job 45 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R RSV HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 23 running job 24 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 70 running job 71 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 47 running job 48 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R RSV HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 58 running job 59 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 111 running job 112 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R ILI-RSV HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 120 running job 121 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 125 running job 126 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 132 running job 133 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-RSV HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 145 running job 146 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI-RSV HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 157 running job 158 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI-RSV HOSP_ADMIT HOSP_CITY WEEKLY 2018 2022)
+Launcher: Task 168 running job 169 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI-RSV HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 170 running job 171 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI-RSV HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 20 running job 21 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 50 running job 51 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 80 running job 81 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-RSV HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 68 running job 69 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI HOSP_CENSUS PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 75 running job 76 on c312-204.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-RSV HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 106 running job 107 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-RSV HOSP_CENSUS PAT_ZCTA WEEKLY 2018 2022)
+Launcher: Task 107 running job 108 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-RSV HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 90 running job 91 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 137 running job 138 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-RSV HOSP_ADMIT HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 135 running job 136 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-RSV HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 134 running job 135 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-RSV HOSP_ADMIT PAT_CITY WEEKLY 2018 2022)
+Launcher: Task 147 running job 148 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI-RSV HOSP_ADMIT HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Task 155 running job 156 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-ILI-RSV HOSP_CENSUS HOSP_STATE WEEKLY 2018 2022)
+Launcher: Task 156 running job 157 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI-RSV HOSP_ADMIT THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 174 running job 175 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R COV-FLU-ILI-RSV HOSP_CENSUS THCIC_ID WEEKLY 2018 2022)
+Launcher: Task 165 running job 166 on c313-074.ls6.tacc.utexas.edu (Rscript run_aggregate_funs.R FLU-ILI-RSV HOSP_CENSUS HOSP_COUNTY WEEKLY 2018 2022)
+Launcher: Job 16 completed in 13 seconds.
+Launcher: Task 15 done. Exiting.
+Launcher: Job 40 completed in 12 seconds.
+Launcher: Task 39 done. Exiting.
+Launcher: Job 28 completed in 13 seconds.
+Launcher: Task 27 done. Exiting.
+Launcher: Job 29 completed in 13 seconds.
+Launcher: Task 28 done. Exiting.
+Launcher: Job 22 completed in 14 seconds.
+Launcher: Task 21 done. Exiting.
+Launcher: Job 37 completed in 12 seconds.
+Launcher: Task 36 done. Exiting.
+Launcher: Job 42 completed in 12 seconds.
+Launcher: Task 41 done. Exiting.
+Launcher: Job 44 completed in 13 seconds.
+Launcher: Task 43 done. Exiting.
+Launcher: Job 17 completed in 12 seconds.
+Launcher: Task 16 done. Exiting.
+Launcher: Job 96 completed in 14 seconds.
+Launcher: Task 95 done. Exiting.
+Launcher: Job 30 completed in 13 seconds.
+Launcher: Task 29 done. Exiting.
+Launcher: Job 109 completed in 15 seconds.
+Launcher: Task 108 done. Exiting.
+Launcher: Job 97 completed in 15 seconds.
+Launcher: Task 96 done. Exiting.
+Launcher: Job 159 completed in 16 seconds.
+Launcher: Task 158 done. Exiting.
+Launcher: Job 43 completed in 13 seconds.
+Launcher: Task 42 done. Exiting.
+Launcher: Job 116 completed in 15 seconds.
+Launcher: Task 115 done. Exiting.
+Launcher: Job 48 completed in 7 seconds.
+Launcher: Task 47 done. Exiting.
+Launcher: Job 25 completed in 13 seconds.
+Launcher: Task 24 done. Exiting.
+Launcher: Job 38 completed in 8 seconds.
+Launcher: Task 37 done. Exiting.
+Launcher: Job 18 completed in 8 seconds.
+Launcher: Job 98 completed in 15 seconds.
+Launcher: Task 17 done. Exiting.
+Launcher: Task 97 done. Exiting.
+Launcher: Job 27 completed in 14 seconds.
+Launcher: Task 26 done. Exiting.
+Launcher: Job 89 completed in 16 seconds.
+Launcher: Task 88 done. Exiting.
+Launcher: Job 24 completed in 8 seconds.
+Launcher: Task 23 done. Exiting.
+Launcher: Job 88 completed in 14 seconds.
+Launcher: Task 87 done. Exiting.
+Launcher: Job 15 completed in 8 seconds.
+Launcher: Task 14 done. Exiting.
+Launcher: Job 39 completed in 10 seconds.
+Launcher: Task 38 done. Exiting.
+Launcher: Job 14 completed in 8 seconds.
+Launcher: Task 13 done. Exiting.
+Launcher: Job 87 completed in 15 seconds.
+Launcher: Task 86 done. Exiting.
+Launcher: Job 13 completed in 8 seconds.
+Launcher: Task 12 done. Exiting.
+Launcher: Job 46 completed in 8 seconds.
+Launcher: Task 45 done. Exiting.
+Launcher: Job 34 completed in 15 seconds.
+Launcher: Task 33 done. Exiting.
+Launcher: Job 41 completed in 10 seconds.
+Launcher: Task 40 done. Exiting.
+Launcher: Job 31 completed in 17 seconds.
+Launcher: Task 30 done. Exiting.
+Launcher: Job 36 completed in 11 seconds.
+Launcher: Task 35 done. Exiting.
+Launcher: Job 26 completed in 11 seconds.
+Launcher: Task 25 done. Exiting.
+Launcher: Job 90 completed in 12 seconds.
+Launcher: Task 89 done. Exiting.
+Launcher: Job 32 completed in 15 seconds.
+Launcher: Task 31 done. Exiting.
+Launcher: Job 102 completed in 13 seconds.
+Launcher: Task 101 done. Exiting.
+Launcher: Job 20 completed in 13 seconds.
+Launcher: Task 19 done. Exiting.
+Launcher: Job 120 completed in 17 seconds.
+Launcher: Task 119 done. Exiting.
+Launcher: Job 86 completed in 12 seconds.
+Launcher: Task 85 done. Exiting.
+Launcher: Job 85 completed in 11 seconds.
+Launcher: Task 84 done. Exiting.
+Launcher: Job 100 completed in 12 seconds.
+Launcher: Task 99 done. Exiting.
+Launcher: Job 103 completed in 19 seconds.
+Launcher: Task 102 done. Exiting.
+Launcher: Job 108 completed in 11 seconds.
+Launcher: Task 107 done. Exiting.
+Launcher: Job 4 completed in 20 seconds.
+Launcher: Task 3 done. Exiting.
+Launcher: Job 99 completed in 16 seconds.
+Launcher: Task 98 done. Exiting.
+Launcher: Job 162 completed in 14 seconds.
+Launcher: Task 161 done. Exiting.
+Launcher: Job 114 completed in 14 seconds.
+Launcher: Job 134 completed in 19 seconds.
+Launcher: Task 113 done. Exiting.
+Launcher: Task 133 done. Exiting.
+Launcher: Job 47 completed in 18 seconds.
+Launcher: Task 46 done. Exiting.
+Launcher: Job 72 completed in 20 seconds.
+Launcher: Task 71 done. Exiting.
+Launcher: Job 66 completed in 20 seconds.
+Launcher: Task 65 done. Exiting.
+Launcher: Job 101 completed in 13 seconds.
+Launcher: Task 100 done. Exiting.
+Launcher: Job 45 completed in 11 seconds.
+Launcher: Task 44 done. Exiting.
+Launcher: Job 54 completed in 20 seconds.
+Launcher: Task 53 done. Exiting.
+Launcher: Job 19 completed in 13 seconds.
+Launcher: Task 18 done. Exiting.
+Launcher: Job 78 completed in 21 seconds.
+Launcher: Task 77 done. Exiting.
+Launcher: Job 168 completed in 14 seconds.
+Launcher: Task 167 done. Exiting.
+Launcher: Job 160 completed in 17 seconds.
+Launcher: Task 159 done. Exiting.
+Launcher: Job 112 completed in 13 seconds.
+Launcher: Task 111 done. Exiting.
+Launcher: Job 110 completed in 13 seconds.
+Launcher: Task 109 done. Exiting.
+Launcher: Job 106 completed in 15 seconds.
+Launcher: Task 105 done. Exiting.
+Launcher: Job 111 completed in 17 seconds.
+Launcher: Job 147 completed in 20 seconds.
+Launcher: Task 110 done. Exiting.
+Launcher: Task 146 done. Exiting.
+Launcher: Job 113 completed in 19 seconds.
+Launcher: Task 112 done. Exiting.
+Launcher: Job 12 completed in 19 seconds.
+Launcher: Task 11 done. Exiting.
+Launcher: Job 21 completed in 11 seconds.
+Launcher: Task 20 done. Exiting.
+Launcher: Job 49 completed in 20 seconds.
+Launcher: Task 48 done. Exiting.
+Launcher: Job 60 completed in 19 seconds.
+Launcher: Task 59 done. Exiting.
+Launcher: Job 104 completed in 15 seconds.
+Launcher: Task 103 done. Exiting.
+Launcher: Job 73 completed in 21 seconds.
+Launcher: Task 72 done. Exiting.
+Launcher: Job 94 completed in 20 seconds.
+Launcher: Task 93 done. Exiting.
+Launcher: Job 157 completed in 13 seconds.
+Launcher: Task 156 done. Exiting.
+Launcher: Job 74 completed in 20 seconds.
+Launcher: Task 73 done. Exiting.
+Launcher: Job 118 completed in 15 seconds.
+Launcher: Task 117 done. Exiting.
+Launcher: Job 1 completed in 20 seconds.
+Launcher: Task 0 done. Exiting.
+Launcher: Job 64 completed in 20 seconds.
+Launcher: Task 63 done. Exiting.
+Launcher: Job 33 completed in 21 seconds.
+Launcher: Task 32 done. Exiting.
+Launcher: Job 5 completed in 23 seconds.
+Launcher: Task 4 done. Exiting.
+Launcher: Job 10 completed in 23 seconds.
+Launcher: Task 9 done. Exiting.
+Launcher: Job 3 completed in 21 seconds.
+Launcher: Task 2 done. Exiting.
+Launcher: Job 92 completed in 18 seconds.
+Launcher: Task 91 done. Exiting.
+Launcher: Job 166 completed in 15 seconds.
+Launcher: Task 165 done. Exiting.
+Launcher: Job 8 completed in 24 seconds.
+Launcher: Task 7 done. Exiting.
+Launcher: Job 23 completed in 18 seconds.
+Launcher: Task 22 done. Exiting.
+Launcher: Job 63 completed in 22 seconds.
+Launcher: Task 62 done. Exiting.
+Launcher: Job 6 completed in 18 seconds.
+Launcher: Task 5 done. Exiting.
+Launcher: Job 82 completed in 25 seconds.
+Launcher: Task 81 done. Exiting.
+Launcher: Job 180 completed in 23 seconds.
+Launcher: Task 179 done. Exiting.
+Launcher: Job 53 completed in 24 seconds.
+Launcher: Task 52 done. Exiting.
+Launcher: Job 117 completed in 24 seconds.
+Launcher: Task 116 done. Exiting.
+Launcher: Job 152 completed in 24 seconds.
+Launcher: Task 151 done. Exiting.
+Launcher: Job 164 completed in 19 seconds.
+Launcher: Task 163 done. Exiting.
+Launcher: Job 84 completed in 19 seconds.
+Launcher: Task 83 done. Exiting.
+Launcher: Job 2 completed in 19 seconds.
+Launcher: Task 1 done. Exiting.
+Launcher: Job 137 completed in 26 seconds.
+Launcher: Task 136 done. Exiting.
+Launcher: Job 76 completed in 16 seconds.
+Launcher: Task 75 done. Exiting.
+Launcher: Job 80 completed in 25 seconds.
+Launcher: Task 79 done. Exiting.
+Launcher: Job 52 completed in 18 seconds.
+Launcher: Task 51 done. Exiting.
+Launcher: Job 62 completed in 19 seconds.
+Launcher: Task 61 done. Exiting.
+Launcher: Job 61 completed in 20 seconds.
+Launcher: Task 60 done. Exiting.
+Launcher: Job 50 completed in 20 seconds.
+Launcher: Task 49 done. Exiting.
+Launcher: Job 58 completed in 24 seconds.
+Launcher: Task 57 done. Exiting.
+Launcher: Job 115 completed in 21 seconds.
+Launcher: Task 114 done. Exiting.
+Launcher: Job 150 completed in 21 seconds.
+Launcher: Task 149 done. Exiting.
+Launcher: Job 173 completed in 21 seconds.
+Launcher: Task 172 done. Exiting.
+Launcher: Job 174 completed in 23 seconds.
+Launcher: Task 173 done. Exiting.
+Launcher: Job 122 completed in 26 seconds.
+Launcher: Task 121 done. Exiting.
+Launcher: Job 148 completed in 19 seconds.
+Launcher: Task 147 done. Exiting.
+Launcher: Job 105 completed in 24 seconds.
+Launcher: Task 104 done. Exiting.
+Launcher: Job 91 completed in 19 seconds.
+Launcher: Task 90 done. Exiting.
+Launcher: Job 75 completed in 21 seconds.
+Launcher: Task 74 done. Exiting.
+Launcher: Job 51 completed in 18 seconds.
+Launcher: Task 50 done. Exiting.
+Launcher: Job 165 completed in 27 seconds.
+Launcher: Task 164 done. Exiting.
+Launcher: Job 144 completed in 21 seconds.
+Launcher: Task 143 done. Exiting.
+Launcher: Job 126 completed in 20 seconds.
+Launcher: Task 125 done. Exiting.
+Launcher: Job 146 completed in 20 seconds.
+Launcher: Job 132 completed in 22 seconds.
+Launcher: Task 145 done. Exiting.
+Launcher: Task 131 done. Exiting.
+Launcher: Job 156 completed in 19 seconds.
+Launcher: Task 155 done. Exiting.
+Launcher: Job 172 completed in 22 seconds.
+Launcher: Task 171 done. Exiting.
+Launcher: Job 138 completed in 19 seconds.
+Launcher: Task 137 done. Exiting.
+Launcher: Job 170 completed in 22 seconds.
+Launcher: Task 169 done. Exiting.
+Launcher: Job 65 completed in 23 seconds.
+Launcher: Task 64 done. Exiting.
+Launcher: Job 145 completed in 25 seconds.
+Launcher: Task 144 done. Exiting.
+Launcher: Job 123 completed in 27 seconds.
+Launcher: Task 122 done. Exiting.
+Launcher: Job 68 completed in 22 seconds.
+Launcher: Task 67 done. Exiting.
+Launcher: Job 35 completed in 20 seconds.
+Launcher: Task 34 done. Exiting.
+Launcher: Job 136 completed in 20 seconds.
+Launcher: Task 135 done. Exiting.
+Launcher: Job 161 completed in 23 seconds.
+Launcher: Task 160 done. Exiting.
+Launcher: Job 124 completed in 23 seconds.
+Launcher: Task 123 done. Exiting.
+Launcher: Job 163 completed in 23 seconds.
+Launcher: Task 162 done. Exiting.
+Launcher: Job 130 completed in 28 seconds.
+Launcher: Task 129 done. Exiting.
+Launcher: Job 121 completed in 22 seconds.
+Launcher: Task 120 done. Exiting.
+Launcher: Job 178 completed in 29 seconds.
+Launcher: Task 177 done. Exiting.
+Launcher: Job 93 completed in 28 seconds.
+Launcher: Task 92 done. Exiting.
+Launcher: Job 133 completed in 22 seconds.
+Launcher: Task 132 done. Exiting.
+Launcher: Job 169 completed in 22 seconds.
+Launcher: Task 168 done. Exiting.
+Launcher: Job 154 completed in 24 seconds.
+Launcher: Task 153 done. Exiting.
+Launcher: Job 77 completed in 24 seconds.
+Launcher: Task 76 done. Exiting.
+Launcher: Job 56 completed in 24 seconds.
+Launcher: Task 55 done. Exiting.
+Launcher: Job 176 completed in 30 seconds.
+Launcher: Task 175 done. Exiting.
+Launcher: Job 142 completed in 25 seconds.
+Launcher: Task 141 done. Exiting.
+Launcher: Job 135 completed in 22 seconds.
+Launcher: Task 134 done. Exiting.
+Launcher: Job 79 completed in 30 seconds.
+Launcher: Task 78 done. Exiting.
+Launcher: Job 67 completed in 31 seconds.
+Launcher: Task 66 done. Exiting.
+Launcher: Job 140 completed in 30 seconds.
+Launcher: Task 139 done. Exiting.
+Launcher: Job 55 completed in 30 seconds.
+Launcher: Task 54 done. Exiting.
+Launcher: Job 171 completed in 24 seconds.
+Launcher: Task 170 done. Exiting.
+Launcher: Job 149 completed in 27 seconds.
+Launcher: Task 148 done. Exiting.
+Launcher: Job 107 completed in 24 seconds.
+Launcher: Task 106 done. Exiting.
+Launcher: Job 125 completed in 27 seconds.
+Launcher: Task 124 done. Exiting.
+Launcher: Job 7 completed in 25 seconds.
+Launcher: Task 6 done. Exiting.
+Launcher: Job 158 completed in 27 seconds.
+Launcher: Task 157 done. Exiting.
+Launcher: Job 128 completed in 28 seconds.
+Launcher: Task 127 done. Exiting.
+Launcher: Job 119 completed in 32 seconds.
+Launcher: Task 118 done. Exiting.
+Launcher: Job 167 completed in 35 seconds.
+Launcher: Task 166 done. Exiting.
+Launcher: Job 151 completed in 32 seconds.
+Launcher: Task 150 done. Exiting.
+Launcher: Job 95 completed in 31 seconds.
+Launcher: Task 94 done. Exiting.
+Launcher: Job 9 completed in 37 seconds.
+Launcher: Task 8 done. Exiting.
+Launcher: Job 139 completed in 34 seconds.
+Launcher: Task 138 done. Exiting.
+Launcher: Job 127 completed in 33 seconds.
+Launcher: Task 126 done. Exiting.
+Launcher: Job 175 completed in 32 seconds.
+Launcher: Task 174 done. Exiting.
+Launcher: Job 153 completed in 42 seconds.
+Launcher: Task 152 done. Exiting.
+Launcher: Job 57 completed in 40 seconds.
+Launcher: Task 56 done. Exiting.
+Launcher: Job 69 completed in 36 seconds.
+Launcher: Task 68 done. Exiting.
+Launcher: Job 81 completed in 36 seconds.
+Launcher: Task 80 done. Exiting.
+Launcher: Job 129 completed in 45 seconds.
+Launcher: Task 128 done. Exiting.
+Launcher: Job 141 completed in 45 seconds.
+Launcher: Task 140 done. Exiting.
+Launcher: Job 11 completed in 43 seconds.
+Launcher: Task 10 done. Exiting.
+Launcher: Job 155 completed in 50 seconds.
+Launcher: Task 154 done. Exiting.
+Launcher: Job 177 completed in 46 seconds.
+Launcher: Task 176 done. Exiting.
+Launcher: Job 59 completed in 49 seconds.
+Launcher: Task 58 done. Exiting.
+Launcher: Job 83 completed in 52 seconds.
+Launcher: Task 82 done. Exiting.
+Launcher: Job 143 completed in 58 seconds.
+Launcher: Task 142 done. Exiting.
+Launcher: Job 71 completed in 51 seconds.
+Launcher: Task 70 done. Exiting.
+Launcher: Job 179 completed in 60 seconds.
+Launcher: Task 178 done. Exiting.
+Launcher: Job 131 completed in 56 seconds.
+Launcher: Task 130 done. Exiting.
+Launcher: Job 70 completed in 90 seconds.
+Launcher: Task 69 done. Exiting.
+Launcher: Done. Job exited without errors
