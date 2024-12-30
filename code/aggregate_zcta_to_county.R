@@ -21,7 +21,7 @@ source("get_packages_used.R")
 zcta_county_cross = read_csv("../input_data/US_ZCTA-CITY-COUNTY_pop_2018-2022_acs.csv") %>%
   mutate(ZCTA=as.character(ZCTA))
 
-parallel=F
+parallel=TRUE
 if(parallel){
   input_dir_path  = "../../AGGREGATED_PAT_FILES"
   output_dir_path = "../../AGGREGATED_BY_CROSSWALK_PAT_FILES"
