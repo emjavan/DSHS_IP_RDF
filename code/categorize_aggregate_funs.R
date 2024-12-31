@@ -111,7 +111,8 @@ hospital_ids_to_city_county = function(){
     
     combined_data_clean = combined_data %>%
       dplyr::select(-starts_with("Q"), -starts_with("END")) %>%
-      rename(HOSP_NAME       = HOSPITAL_NAME, HOSP_CITY = HOSPITAL_CITY) %>%
+      rename(HOSP_NAME       = HOSPITAL_NAME, 
+             HOSP_CITY       = HOSPITAL_CITY) %>%
       mutate(COUNTY_FIPS     = coalesce(COUNTY, COUNTY_FIPS),
              COUNTY_FIPS     = paste0("48", COUNTY_FIPS), # add state code
              HOSP_NAME_clean = norm_name_with_dict(clean_text_column(HOSP_NAME), hosp_name_dict),
@@ -293,7 +294,8 @@ process_patient_data <- function(
       ADMIT_START_OF_CARE = lubridate::ymd(ADMIT_START_OF_CARE),
       STMT_PERIOD_THRU    = lubridate::ymd(STMT_PERIOD_THRU),
       LENGTH_OF_STAY_DAYS = lubridate::time_length(STMT_PERIOD_THRU - ADMIT_START_OF_CARE, unit = "days"),
-      ADMIT_YEAR          = as.character(lubridate::year(ADMIT_START_OF_CARE)), # Extract year
+      # Patient actually assigned by discharge year and not admit, only issue for rare 2018's admitted late 2017
+      DISCHARGE_YEAR          = as.character(lubridate::year(STMT_PERIOD_THRU)), # Extract year
       
       # Binary flags for ward and ICU amounts being 0
       WARD_AMOUNT_0USD = ifelse(WARD_AMOUNT == 0, 1, 0),
@@ -330,7 +332,7 @@ process_patient_data <- function(
     ) %>%
     left_join(zip_zcta_city_crosswalk, by="PAT_ZIP_5CHAR") %>%
     # Open all info about the hospital THCIC_ID
-    left_join(hospital_ids_to_city_county(), by=c("THCIC_ID", "ADMIT_YEAR"="YEAR")) %>%
+    left_join(hospital_ids_to_city_county(), by=c("THCIC_ID", "DISCHARGE_YEAR"="YEAR")) %>%
     mutate(PAT_CITY = toupper(PAT_CITY))
   
   return(cleaned_pat_df)
