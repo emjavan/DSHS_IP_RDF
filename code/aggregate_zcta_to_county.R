@@ -25,7 +25,7 @@ zcta_county_cross = read_csv("../input_data/US_ZCTA-CITY-COUNTY_pop_2018-2022_ac
   ) %>%
   rename(PAT_ZCTA=ZCTA, PAT_COUNTY=COUNTY, PAT_COUNTY_FIPS=COUNTY_FIPS, PAT_STATE_STATE)
 
-parallel=FALSE
+parallel=TRUE
 if(parallel){
   input_dir_path  = "../../AGGREGATED_PAT_FILES"
   output_dir_path = "../../AGGREGATED_BY_CROSSWALK_PAT_FILES"
