@@ -451,6 +451,11 @@ group_daily_to_weekly <- function(
     week_start       = T, # if F, then will make day end of week
     count_type       = "HOSP_ADMIT" # Or HOSP_CENSUS
     ) {
+  # If using city name need state to make it unique
+  if(grouping_var == "PAT_CITY"){
+    optional_grp_var = c(optional_grp_var, "PAT_STATE")
+  }
+  
   # Convert date column to Date if not already
   patient_data <- patient_data %>%
     mutate(across(all_of(date_col), as.Date))
