@@ -23,7 +23,7 @@ zcta_county_cross = read_csv("../input_data/US_ZCTA-CITY-COUNTY_pop_2018-2022_ac
     ZCTA = as.character(ZCTA),
     STATE = gsub(" \\(PO BOXES\\)", "", STATE)
   ) %>%
-  rename(PAT_ZCTA=ZCTA, PAT_COUNTY=COUNTY, PAT_COUNTY_FIPS=COUNTY_FIPS, PAT_STATE_STATE)
+  rename(PAT_ZCTA=ZCTA, PAT_COUNTY=COUNTY, PAT_COUNTY_FIPS=COUNTY_FIPS, PAT_STATE=STATE)
 
 parallel=TRUE
 if(parallel){
