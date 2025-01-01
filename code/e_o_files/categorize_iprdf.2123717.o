@@ -1,0 +1,34 @@
+/corral-secure/utexas/IBN24016/DSHS_IP_RDF/code
+Tue Dec 31 18:52:42 CST 2024
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    2
+   Working directory:  /corral-secure/utexas/IBN24016/DSHS_IP_RDF/code
+   Processes per host: 2
+   Total processes:    4
+   Total jobs:         5
+   Scheduling method:  interleaved
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+Launcher: Task 0 running job 1 on c312-214.ls6.tacc.utexas.edu (Rscript run_categorize_funs.R ../../FILTERED_PAT_FILES/out.IP_2018_Q3_4_filtered.txt F)
+[1] "Run `sbatch launch_filter_icd10_codes.sh` on LS6 command line to re-filter IP RDF files"
+Launcher: Task 2 running job 3 on c313-013.ls6.tacc.utexas.edu (Rscript run_categorize_funs.R ../../FILTERED_PAT_FILES/out.IP_2020_filtered.txt F)
+[1] "Run `sbatch launch_filter_icd10_codes.sh` on LS6 command line to re-filter IP RDF files"
+Launcher: Task 3 running job 4 on c313-013.ls6.tacc.utexas.edu (Rscript run_categorize_funs.R ../../FILTERED_PAT_FILES/out.IP_2021_filtered.txt F)
+[1] "Run `sbatch launch_filter_icd10_codes.sh` on LS6 command line to re-filter IP RDF files"
+Launcher: Task 1 running job 2 on c312-214.ls6.tacc.utexas.edu (Rscript run_categorize_funs.R ../../FILTERED_PAT_FILES/out.IP_2019_filtered.txt F)
+[1] "Run `sbatch launch_filter_icd10_codes.sh` on LS6 command line to re-filter IP RDF files"
+Launcher: Job 1 completed in 247 seconds.
+Launcher: Task 0 running job 5 on c312-214.ls6.tacc.utexas.edu (Rscript run_categorize_funs.R ../../FILTERED_PAT_FILES/out.IP_2022_filtered.txt F)
+[1] "Run `sbatch launch_filter_icd10_codes.sh` on LS6 command line to re-filter IP RDF files"
+Launcher: Job 2 completed in 890 seconds.
+Launcher: Task 1 done. Exiting.
+Launcher: Job 5 completed in 5314 seconds.
+Launcher: Task 0 done. Exiting.
+Launcher: Job 3 completed in 5677 seconds.
+Launcher: Task 2 done. Exiting.
+Launcher: Job 4 completed in 7690 seconds.
+Launcher: Task 3 done. Exiting.
+Launcher: Done. Job exited without errors
