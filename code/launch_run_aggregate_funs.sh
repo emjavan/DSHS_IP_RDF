@@ -6,7 +6,7 @@
 #SBATCH -p corralextra                  # Queue (partition) name
 #SBATCH -N 2                            # Total nodes (must be 1 for serial)
 #SBATCH -n 180                          # Total mpi tasks to start at once (should be 1 for serial)
-#SBATCH -t 00:05:00                     # Run time (hh:mm:ss)
+#SBATCH -t 02:00:00                     # Run time (hh:mm:ss)
 #SBATCH --mail-type=all                 # Send email at begin, end, fail of job
 #SBATCH -A IBN24016                     # Project/Allocation name (req'd if you have more than 1)
 #SBATCH --mail-user=emjavan@utexas.edu  # Email to send to
